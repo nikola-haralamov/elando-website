@@ -1,0 +1,13 @@
+import './assets/styles/Reset.css'
+import './assets/styles/App.scss'
+import App from './App.svelte'
+
+const app = new App({
+  target: document.getElementById('app'),
+})
+
+export default app
+
+<style>
+
+</style>
