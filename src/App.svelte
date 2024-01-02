@@ -4,11 +4,21 @@
   export let menu = 1;
 </script>
 
+<header>
+  <div class="container">
+    <img src="./logo.svg" alt="logo" />
+    <nav>
+      <a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a>
+      <a href="/about" on:click|preventDefault={() => (menu = 2)}>About</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <ul id="menu">
-    <li><a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a></li> |
-    <li><a href="/about" on:click|preventDefault={() => (menu = 2)}>About</a></li>
-  </ul>
+
+  <div class="container">
+  </div>
+
 
   {#if menu === 1}
     <Home />
@@ -20,13 +30,31 @@
     </h1>
   {/if}
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <div class="leftaa"></div>
 </main>
 
 <style>
   ul#menu li{
     display : inline;
   }
+
+  .leftaa {
+    z-index: -1;
+    top: 10rem;
+    left: -30rem;
+    position: absolute;
+    fill: var(--Cyan, #00E5FF);
+    mix-blend-mode: screen;
+    filter: blur(230px);
+    width: 838.17px;
+    height: 838.17px;
+    transform: rotate(-60deg);
+    transform-origin: 0 0;
+    opacity: 0.25;
+    background: #00E5FF;
+    /*box-shadow: 460px 460px 460px; */
+    /*filter: blur(460px)*/
+
+  }
+
 </style>
