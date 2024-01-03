@@ -2,6 +2,7 @@
 export default {
     content: [
         "./resources/**/*.blade.php",
+        "./resources/**/*.php",
         "./resources/**/*.js",
         "./resources/**/*.ts",
         "./resources/**/*.svelte",
