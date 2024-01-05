@@ -1,0 +1,86 @@
+@import "./reset.css";
+@import "./variables.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: $font;
+  color: $color;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $background;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+nav  {
+
+}
+
+
+
+
+.glow-brass {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 52 58/var(--tw-bg-opacity))
+}
+
+.glow-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 183 198/var(--tw-bg-opacity))
+}
+
+.glow-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(183 208 245/var(--tw-bg-opacity))
+}
+
+.glow-ocean {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 151 157/var(--tw-bg-opacity))
+}
+
+.glow,.glow-blue,.glow-brass,.glow-ocean,.glow-red {
+  border-radius: 9999px;
+  position: absolute;
+  transform: translateZ(0)
+}
+
+.glow-blue.blur-small,.glow-brass.blur-small,.glow-ocean.blur-small,.glow-red.blur-small,.glow.blur-small {
+  --tw-blur: blur(40px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.glow-blue.blur-large,.glow-brass.blur-large,.glow-ocean.blur-large,.glow-red.blur-large,.glow.blur-large {
+  --tw-blur: blur(120px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.glow-motion {
+  animation: glowMotion 6s linear infinite
+}
+
+@keyframes glowMotion {
+  0% {
+    transform: translateZ(0) scale(1)
+  }
+
+  33% {
+    transform: translate3d(20px,-10px,0) scale(1.01)
+  }
+
+  66% {
+    transform: translate3d(-20px,20px,0) scale(.95)
+  }
+
+  to {
+    transform: translate3d(0,0,0) scale(1)
+  }
+}

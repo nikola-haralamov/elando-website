@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Inertia\Inertia;
 
-class AboutController extends Controller
+class ContactController extends Controller
 {
     public function index(): \Inertia\Response
     {
-        return Inertia::render('About', [
-            'user' => 'Lisko',
+        return Inertia::render('Contact',  [
+            'user' => 'Adi',
         ]);
     }
 }
