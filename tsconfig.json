@@ -46,9 +46,9 @@
             ]
         },
         "include": [
-            "resources/ts/**/*.ts",
-            "resources/ts/**/*.d.ts",
-            "resources/**/*.svelte"
+            "resources/web/**/*.ts",
+            "resources/web/**/*.d.ts",
+            "resources/web/*.svelte"
         ],
         "exclude": [
             "node_modules"
