@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="icon" type="image/svg+xml" href="./static/logo.svg" />
-    @vite('resources/ts/app.ts')
+    @vite('resources/web/app.ts')
     @inertiaHead
 </head>
 <body>
 @inertia
-@vite('resources/css/app.css')
+@vite('resources/assets/styles/app.scss')
 </body>
 </html>
