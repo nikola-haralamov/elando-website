@@ -1,4 +1,4 @@
-import './bootstrap.ts';
+import './bootstrap.js';
 import { createInertiaApp } from '@inertiajs/svelte'
 import Layout from './Layout.svelte'
 

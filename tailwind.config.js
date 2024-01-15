@@ -4,7 +4,6 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.php",
         "./resources/**/*.js",
-        "./resources/**/*.ts",
         "./resources/**/*.svelte",
     ],
     theme: {

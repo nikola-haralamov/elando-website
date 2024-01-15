@@ -5,7 +5,7 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 export default defineConfig({
     plugins: [
         laravel({
-            input: ["resources/assets/styles/app.scss", "resources/web/app.ts"],
+            input: ["resources/assets/styles/app.scss", "resources/web/app.js"],
             refresh: true,
         }),
         svelte({}),

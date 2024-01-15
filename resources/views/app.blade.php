@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="icon" type="image/svg+xml" href="./static/logo.svg" />
-    @vite('resources/web/app.ts')
+    @vite('resources/web/app.js')
     @inertiaHead
 </head>
 <body>
