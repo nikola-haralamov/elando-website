@@ -2,16 +2,19 @@
     import { inertia } from '@inertiajs/svelte'
 </script>
 
+<header>
+    <nav>
+        <a use:inertia href="/">Home</a>
+        <a use:inertia href="/about">About</a>
+        <a use:inertia href="/contact">Contact</a>
+    </nav>
+</header>
+
 <main>
-    <header>
-        <a use:inertia href="/">Home</a>
-        <a use:inertia href="/about">About</a>
-        <a use:inertia href="/contact">Contact</a>
-    </header>
     <slot />
-    <footer>
-        <a use:inertia href="/">Home</a>
-        <a use:inertia href="/about">About</a>
-        <a use:inertia href="/contact">Contact</a>
-    </footer>
 </main>
+<footer>
+    <a use:inertia href="/">Home</a>
+    <a use:inertia href="/about">About</a>
+    <a use:inertia href="/contact">Contact</a>
+</footer>
