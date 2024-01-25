@@ -2,7 +2,7 @@
 import Layout from '../Layout.vue'
 import { Head } from '@inertiajs/vue3'
 
-defineProps({ user: Object, route: String })
+defineProps({ user: Object })
 
 </script>
 
@@ -35,8 +35,6 @@ defineProps({ user: Object, route: String })
                     <img src="static/home-top-left.svg" alt="My Happy SVG"/>
                 </div>
             </div>
-
-            <div>{{ route }}</div>
 
 
             <!--        <div class="container max-w-screen-lg">-->
