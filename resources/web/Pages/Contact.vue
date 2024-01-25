@@ -8,7 +8,11 @@ defineProps({ user: Object })
 
 <template>
     <Layout>
-        <Head title="Contact" />
+        <Head>
+            <title>Contact</title>
+            <meta head-key="description" name="description" content="Contact description" />
+        </Head>
+
         <h1>Contact</h1>
         <p>Hello {{ user.name }}, welcome to your first Inertia app!</p>
     </Layout>

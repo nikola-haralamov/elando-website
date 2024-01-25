@@ -8,7 +8,10 @@ defineProps({ user: Object })
 
 <template>
     <Layout>
-        <Head title="Home" />
+        <Head>
+            <title>Home</title>
+            <meta head-key="description" name="description" content="Home description" />
+        </Head>
 
 
         <section class="list-grid section relative overflow-hidden ">
