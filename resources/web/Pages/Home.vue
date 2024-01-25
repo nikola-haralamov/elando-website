@@ -2,7 +2,7 @@
 import Layout from '../Layout.vue'
 import { Head } from '@inertiajs/vue3'
 
-defineProps({ user: Object })
+defineProps({ user: Object, route: String })
 
 </script>
 
@@ -24,17 +24,20 @@ defineProps({ user: Object })
 
             <div class="wrppr">
                 <div class="grid h-auto place-items-center">
-                    <h1 class="flex items-center text-8xl font-extrabold dark:text-white" style="max-width: 700px">
-                        The experts in
-                        the land of IT
-                    </h1>
-
-                    <h2>{{ user.name }}</h2>
+                    <div class="flex items-center lg:block lg:ml-60" style="max-width: 750px">
+                        <h1 class="lg:text-8xl md:text-7xl font-extrabold">
+                            The experts in
+                            the land of IT
+                        </h1>
+                    </div>
                 </div>
                 <div>
                     <img src="static/home-top-left.svg" alt="My Happy SVG"/>
                 </div>
             </div>
+
+            <div>{{ route }}</div>
+
 
             <!--        <div class="container max-w-screen-lg">-->
             <!--            <h2 class="title sm:text-2xl text-lg lg:mb-36 mb-12 md:mb-20 text-center">A white-glove experience.</h2>-->
