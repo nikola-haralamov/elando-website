@@ -1,14 +1,16 @@
 import './bootstrap.js';
-import { createInertiaApp } from '@inertiajs/svelte'
-import Layout from './Layout.svelte'
+import { createApp, h } from 'vue'
+import { createInertiaApp } from '@inertiajs/vue3'
 
 createInertiaApp({
-    resolve: name => {
-        const pages = import.meta.glob('./Pages/**/*.svelte', { eager: true })
-        let page = pages[`./Pages/${name}.svelte`]
-        return { default: page.default, layout: page.layout || Layout }
+    resolve: async (name) => {
+        const pages = import.meta.glob('./Pages/**/*.vue');
+
+        return (await pages[`./Pages/${name}.vue`]()).default;
     },
-    setup({ el, App, props }) {
-        new App({ target: el, props })
+    setup({ el, App, props, plugin }) {
+        createApp({ render: () => h(App, props) })
+            .use(plugin)
+            .mount(el)
     },
-})
+});

@@ -9,28 +9,46 @@
     color: $color;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     background: $background;
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
-header nav {
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background: linear-gradient(90deg, rgba(1,21,24,1) 0%, rgba(1,1,1,1) 30%);
 }
 
+header nav {
+
+}
+
+.wrppr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
 .glow-brass {
     --tw-bg-opacity: 1;
-    background-color: rgb(1 42 47/var(--tw-bg-opacity))
+    background-color: rgb(1 53 59/var(--tw-bg-opacity))
 }
 
 .glow-red {
     --tw-bg-opacity: 1;
-    background-color: rgb(53 18 38/var(--tw-bg-opacity))
+    background-color: rgb(64 21 44/var(--tw-bg-opacity))
 }
 
 .glow-blue {

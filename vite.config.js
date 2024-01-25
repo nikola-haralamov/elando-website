@@ -1,14 +1,20 @@
-import { defineConfig } from "vite";
-import laravel from "laravel-vite-plugin";
-import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: ["resources/assets/styles/app.scss", "resources/web/app.js"],
+            input: ['resources/assets/styles/app.scss', 'resources/web/app.js'],
             refresh: true,
         }),
-        svelte({}),
-
+        vue({
+            template: {
+                transformAssetUrls: {
+                    base: null,
+                    includeAbsolute: false,
+                },
+            },
+        }),
     ],
 });

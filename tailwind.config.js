@@ -4,10 +4,20 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.php",
         "./resources/**/*.js",
-        "./resources/**/*.svelte",
+        "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            width: {
+                '96rem': '96rem',
+            },
+            height: {
+                '96rem': '96rem',
+            },
+            top: {
+                '36rem': '36rem',
+            }
+        },
     },
     plugins: [],
 }

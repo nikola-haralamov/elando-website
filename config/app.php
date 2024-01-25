@@ -109,20 +109,6 @@ return [
     |
     */
 
-    /*
-    |--------------------------------------------------------------------------
-    | Available locales
-    |--------------------------------------------------------------------------
-    |
-    | List all locales that your application works with
-    |
-    */
-
-    'available_locales' => [
-        'English'   => 'en',
-        'Bulgarian' => 'bg',
-    ],
-
     'faker_locale' => 'en_US',
 
     /*
