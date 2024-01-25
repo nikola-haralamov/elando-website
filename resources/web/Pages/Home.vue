@@ -29,7 +29,7 @@ defineProps({ user: Object })
                         the land of IT
                     </h1>
 
-                    <h2>{user}</h2>
+                    <h2>{{ user.name }}</h2>
                 </div>
                 <div>
                     <img src="static/home-top-left.svg" alt="My Happy SVG"/>
