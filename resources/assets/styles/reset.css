@@ -1,79 +1,4 @@
-* {
-    margin: 0;
-}
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
-html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-    margin-block-end: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-    list-style: none;
-}
-
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    line-height: 1.5;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
-    line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-    text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-    color: currentColor;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
-    font: inherit;
-}
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-    min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-    scroll-margin-block: 5ex;
-}
-
+@charset "utf-8";
 
 /* Box sizing rules */
 *,
@@ -121,7 +46,8 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+svg {
     max-width: 100%;
     display: block;
 }
@@ -139,6 +65,7 @@ select {
     html:focus-within {
         scroll-behavior: auto;
     }
+
     *,
     *::before,
     *::after {
@@ -146,65 +73,5 @@ select {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
-    }
-}
-
-
-
-.glow-brass {
-    --tw-bg-opacity: 1;
-    background-color: rgb(1 52 58/var(--tw-bg-opacity))
-}
-
-.glow-red {
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 183 198/var(--tw-bg-opacity))
-}
-
-.glow-blue {
-    --tw-bg-opacity: 1;
-    background-color: rgb(183 208 245/var(--tw-bg-opacity))
-}
-
-.glow-ocean {
-    --tw-bg-opacity: 1;
-    background-color: rgb(113 151 157/var(--tw-bg-opacity))
-}
-
-.glow,.glow-blue,.glow-brass,.glow-ocean,.glow-red {
-    border-radius: 9999px;
-    position: absolute;
-    transform: translateZ(0)
-}
-
-.glow-blue.blur-small,.glow-brass.blur-small,.glow-ocean.blur-small,.glow-red.blur-small,.glow.blur-small {
-    --tw-blur: blur(40px);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
-}
-
-.glow-blue.blur-large,.glow-brass.blur-large,.glow-ocean.blur-large,.glow-red.blur-large,.glow.blur-large {
-    --tw-blur: blur(120px);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
-}
-
-.glow-motion {
-    animation: glowMotion 6s linear infinite
-}
-
-@keyframes glowMotion {
-    0% {
-        transform: translateZ(0) scale(1)
-    }
-
-    33% {
-        transform: translate3d(20px,-10px,0) scale(1.01)
-    }
-
-    66% {
-        transform: translate3d(-20px,20px,0) scale(.95)
-    }
-
-    to {
-        transform: translate3d(0,0,0) scale(1)
     }
 }
