@@ -12,6 +12,6 @@
 </head>
 <body>
 @inertia
-@vite('resources/web/app.js')
+@vite('resources/scripts/app.js')
 </body>
 </html>

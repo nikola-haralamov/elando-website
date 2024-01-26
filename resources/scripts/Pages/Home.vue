@@ -1,5 +1,5 @@
 <script setup>
-import Layout from '../Layout.vue'
+import Layout from '../Layouts/Default.vue'
 import { Head } from '@inertiajs/vue3'
 
 defineProps({ user: Object })
@@ -13,8 +13,7 @@ defineProps({ user: Object })
             <meta head-key="description" name="description" content="Home description" />
         </Head>
 
-
-        <section class="list-grid section relative overflow-hidden ">
+        <section class="list-grid section relative overflow-hidden">
             <div class="glow-blue blur-large glow-motion top-56 -right-20 w-96 h-96 -z-10" aria-hidden="true">
             </div>
             <div class="glow-red blur-large glow-motion top-[36rem] left-36 w-[24rem] h-[24rem] -z-10" aria-hidden="true" style="animation-delay: 2s">
@@ -23,7 +22,7 @@ defineProps({ user: Object })
             </div>
 
             <div class="wrppr">
-                <div class="grid h-auto place-items-center">
+                <div class="grid h-auto place-items-center animate__animated animate__fadeInUp" aria-hidden="true">
                     <div class="flex items-center lg:block lg:ml-60" style="max-width: 750px">
                         <h1 class="lg:text-8xl md:text-7xl font-extrabold">
                             The experts in
@@ -31,11 +30,17 @@ defineProps({ user: Object })
                         </h1>
                     </div>
                 </div>
-                <div>
-                    <img src="static/home-top-left.svg" alt="My Happy SVG"/>
+                <div class="animate__animated animate__fadeInDownBig" aria-hidden="true">
+                    <img src="static/home-top-left.svg" alt="My Happy SVG" />
                 </div>
             </div>
 
+
+            <div class="flex content-center">
+                <h3 class="lg:text-2xl md:text-3xl">
+                    What we are good at?
+                </h3>
+            </div>
 
             <!--        <div class="container max-w-screen-lg">-->
             <!--            <h2 class="title sm:text-2xl text-lg lg:mb-36 mb-12 md:mb-20 text-center">A white-glove experience.</h2>-->

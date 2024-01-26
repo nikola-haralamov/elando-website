@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @import "./variables.scss";
 
 @tailwind base;
@@ -97,26 +99,4 @@ header nav {
 .glow-blue.blur-large,.glow-brass.blur-large,.glow-ocean.blur-large,.glow-red.blur-large,.glow.blur-large {
     --tw-blur: blur(120px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
-}
-
-.glow-motion {
-    animation: glowMotion 6s linear infinite
-}
-
-@keyframes glowMotion {
-    0% {
-        transform: translateZ(0) scale(1)
-    }
-
-    33% {
-        transform: translate3d(20px,-10px,0) scale(1.01)
-    }
-
-    66% {
-        transform: translate3d(-20px,20px,0) scale(.95)
-    }
-
-    to {
-        transform: translate3d(0,0,0) scale(1)
-    }
 }

@@ -1,5 +1,5 @@
 <script setup>
-import Layout from '../Layout.vue'
+import Layout from '../Layouts/Default.vue'
 import { Head } from '@inertiajs/vue3'
 
 defineProps({ user: Object })
@@ -9,11 +9,10 @@ defineProps({ user: Object })
 <template>
     <Layout>
         <Head>
-            <title>Contact</title>
-            <meta head-key="description" name="description" content="Contact description" />
+            <title>About</title>
+            <meta head-key="description" name="description" content="About description" />
         </Head>
-
-        <h1>Contact</h1>
+        <h1>About</h1>
         <p>Hello {{ user.name }}, welcome to your first Inertia app!</p>
     </Layout>
 </template>

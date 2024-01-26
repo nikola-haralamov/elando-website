@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import Nav from "./Partials/Nav.vue";
-import Footer from "./Partials/Footer.vue";
+import Nav from "../Partials/Nav.vue";
+import Footer from "../Partials/Footer.vue";
 
 export default {
     components: { Nav, Footer }
