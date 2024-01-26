@@ -7,7 +7,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/assets/styles/app.scss',
-                'resources/scripts/app.js'
+                'resources/scripts/app.js',
             ],
             refresh: true,
         }),
@@ -20,4 +20,14 @@ export default defineConfig({
             },
         }),
     ],
+    resolve: {
+        extensions: [
+            '.js',
+            '.ts',
+            '.jsx',
+            '.tsx',
+            '.vue',
+            '.svelte',
+        ],
+    },
 });
