@@ -60,10 +60,8 @@ import { Link } from '@inertiajs/vue3';
             </div>
         </section>
     </div>
-    <div>
-
-    </div>
 </template>
+
 <style lang="scss">
 footer {
     position: relative;
