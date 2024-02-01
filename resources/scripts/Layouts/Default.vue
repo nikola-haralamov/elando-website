@@ -1,9 +1,6 @@
 <template>
     <header>
-        <div class="logo">
-            <img src="static/logo.svg" alt="" width="86" height="58" />
-        </div>
-        <Nav />
+        <Header />
     </header>
     <main>
         <slot />
@@ -14,10 +11,10 @@
 </template>
 
 <script>
-import Nav from '../Partials/Nav';
+import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
 
 export default {
-    components: { Nav, Footer }
+    components: { Header, Footer }
 }
 </script>

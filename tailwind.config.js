@@ -19,6 +19,8 @@ export default {
                 '96rem': '96rem',
             },
             top: {
+                '10rem': '10rem',
+                '20rem': '20rem',
                 '36rem': '36rem',
             }
         },

@@ -31,15 +31,52 @@ defineProps({ user: Object })
                     </div>
                 </div>
                 <div class="animate__animated animate__fadeInDownBig" aria-hidden="true">
-                    <img src="static/home-top-left.svg" alt="My Happy SVG" />
+                    <img src="static/home/1-top-left.svg" alt="My Happy SVG" />
                 </div>
             </div>
-
-
-            <div class="flex content-center">
-                <h3 class="lg:text-2xl md:text-3xl">
-                    What we are good at?
-                </h3>
+            <div class="max-w-full">
+                <h2 class="title mb-4 md:text-3xl lg:text-4xl mx-auto text-center"> What we are good at? </h2>
+                <div class="flex items-center justify-center flex-wrap gap-2 rounded-[300px] sm:p-6 xl:rounded-full">
+                    <div class="flex items-center justify-center aspect-square duration-300 ease
+                                flex-col group hover:bg-m-500/10 hover:text-white max-w-[400px]
+                                md:px-12 px-8 py-12 rounded-full text-center text-white
+                                transition-colors w-full xl:w-1/3"
+                    >
+                        <img src="static/home/brain.svg" alt="" />
+                        <h3 class="title mb-4 md:text-3xl lg:text-2xl">
+                            We solve bussiness problems
+                        </h3>
+                        <p class="transition-colors duration-300 ease group-hover:text-white leading-6 text-m-500 text-sm max-w-[190px]">
+                            Working across the domain with deep technology and business expertise.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center aspect-square duration-300 ease
+                                flex-col group hover:bg-m-500/10 hover:text-white max-w-[400px]
+                                md:px-12 px-8 py-12 rounded-full text-center text-white
+                                transition-colors w-full xl:w-1/3"
+                    >
+                        <img src="static/home/share.svg" alt="" />
+                        <h3 class="title mb-4 md:text-3xl lg:text-2xl">
+                            We are highly experienced
+                        </h3>
+                        <p class="transition-colors duration-300 ease group-hover:text-white leading-6 text-m-500 text-sm max-w-[220px]">
+                            Experienced in crafting effective software solutions for different needs and budgets.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center aspect-square duration-300 ease
+                                flex-col group hover:bg-m-500/10 hover:text-white max-w-[400px]
+                                md:px-12 px-8 py-12 rounded-full text-center text-white
+                                transition-colors w-full xl:w-1/3"
+                    >
+                        <img src="static/home/technology.svg" alt="" />
+                        <h3 class="title mb-4 md:text-3xl lg:text-2xl">
+                            We are unique blend of expertise & stamina
+                        </h3>
+                        <p class="transition-colors duration-300 ease group-hover:text-white leading-6 text-m-500 text-sm max-w-[220px]">
+                            We do customer software development, technology and consulting.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!--        <div class="container max-w-screen-lg">-->
@@ -53,6 +90,24 @@ defineProps({ user: Object })
             <!--            </div>-->
             <!--        </div>-->
         </section>
+        <section class="list-grid section relative overflow-hidden">
+            <div class="glow-red blur-large glow-motion top-[36rem] left-36 w-[10rem] h-[10rem] -z-10" aria-hidden="true" style="animation-delay: 2s">
+            </div>
+            <div class="-z-10 animate__animated animate__fadeInLeft" >
+                <img src="static/home/what-we-do-section.svg" alt="My Happy SVG" />
+            </div>
 
+
+
+
+        </section>
     </Layout>
 </template>
+
+
+<style lang="scss">
+.blured {
+    border-radius: 50%;
+    filter: blur(230px);
+}
+</style>
