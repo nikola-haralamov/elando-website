@@ -14,9 +14,11 @@ export default {
         extend: {
             width: {
                 '96rem': '96rem',
+                '64rem': '64rem',
             },
             height: {
                 '96rem': '96rem',
+                '64rem': '64rem',
             },
             top: {
                 '10rem': '10rem',

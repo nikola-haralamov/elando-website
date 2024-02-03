@@ -14,11 +14,11 @@ defineProps({ user: Object })
         </Head>
 
         <section class="list-grid section relative overflow-hidden">
-            <div class="glow-blue blur-large glow-motion top-56 -right-20 w-96 h-96 -z-10" aria-hidden="true">
+            <div class="glow-blue blur-large glow-motion top-96 -right-60 w-[50rem] h-[50rem] -z-10 opacity-50" aria-hidden="true">
             </div>
-            <div class="glow-red blur-large glow-motion top-[36rem] left-36 w-[24rem] h-[24rem] -z-10" aria-hidden="true" style="animation-delay: 2s">
+            <div class="glow-red blur-large glow-motion top-[40rem] left-80 w-[12rem] h-[25rem] -z-10 opacity-50" aria-hidden="true" style="animation-delay: 2s">
             </div>
-            <div class="glow-blue blur-large glow-motion -top-20 -left-44 w-[34rem] h-[34rem] -z-10 opacity-30" aria-hidden="true" style="animation-delay: 4s">
+            <div class="glow-blue blur-medium glow-motion -top-20 -left-44 w-[34rem] h-[34rem] -z-10 opacity-30" aria-hidden="true" style="animation-delay: 4s">
             </div>
 
             <div class="wrppr">
@@ -91,23 +91,242 @@ defineProps({ user: Object })
             <!--        </div>-->
         </section>
         <section class="list-grid section relative overflow-hidden">
-            <div class="glow-red blur-large glow-motion top-[36rem] left-36 w-[10rem] h-[10rem] -z-10" aria-hidden="true" style="animation-delay: 2s">
+            <div class="glow-red blur-large glow-motion top-32 left-[36rem] w-[10rem] h-[20rem] -z-10" aria-hidden="true" style="animation-delay: 2s">
             </div>
-            <div class="-z-10 animate__animated animate__fadeInLeft" >
-                <img src="static/home/what-we-do-section.svg" alt="My Happy SVG" />
+            <div class="glow-blue blur-medium glow-motion top-64 -left-80 w-[50rem] h-[40rem] -z-10" aria-hidden="true" style="animation-delay: 4s">
+            </div>
+            <div class="bkg-1">
+                <div class="left">
+                    <div style="max-width: 465px;">
+                        <h3>What we do?</h3>
+                        <p>
+                            Our leadership team has extensive experience in managing leading tech companies and
+                            proven track record of delivering successful projects for international clients
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="two-columns-grid">
+                        <div class="item cyan">
+                            <img src="static/home/it-consulting-services.svg" alt="" />
+                            <p>
+                                IT Consulting Services
+                            </p>
+                        </div>
+                        <div class="item pink">
+                            <img src="static/home/software-engineering-services.svg" alt="" />
+                            <p>
+                                Software Engineering services
+                            </p>
+                        </div>
+                        <div class="item pink">
+                            <img src="static/home/blockchain.svg" alt="" />
+                            <p>
+                                Blockchain solutions
+                            </p>
+                        </div>
+                        <div class="item cyan">
+                            <img src="static/home/cloud.svg" alt="" />
+                            <p>
+                                Cloud solutions
+                            </p>
+                        </div>
+                        <div class="item cyan">
+                            <img src="static/home/mobile-solutions.svg" alt="" />
+                            <p>
+                                Mobile solutions
+                            </p>
+                        </div>
+                        <div class="item pink">
+                            <img src="static/home/cyber-security.svg" alt="" />
+                            <p>
+                                Cyber security solutions
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-
+            <div class="max-w-full read-more">
+                <a href="#" class="brn-read-more">
+                    Read more
+                </a>
+            </div>
 
         </section>
+
+
+        <section class="list-grid section relative overflow-hidden section-2">
+            <div class="title align-middle">
+                <h3>Our Clients</h3>
+            </div>
+            <div class="clients">
+                <div>
+                    <img src="static/home/clients/client-1.svg" alt="">
+                </div>
+                <div>
+                    <img src="static/home/clients/client-2.svg" alt="">
+                </div>
+                <div>
+                    <img src="static/home/clients/client-3.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
     </Layout>
 </template>
 
 
 <style lang="scss">
-.blured {
-    border-radius: 50%;
-    filter: blur(230px);
+.section-1 {
+    display: flex;
+    flex-direction: row;
 }
+
+.bkg-1 {
+    display: flex;
+    background-image: url("../../../public/static/home/what-we-do-section.svg");
+    background-repeat: no-repeat, repeat;
+    background-position-y: bottom;
+    min-height: 954px;
+    min-width: 903px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 5rem;
+
+    .left {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        h3 {
+            font-family: 'Poppins',serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 75px;
+        }
+        p {
+            font-family: 'DM Sans', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+        }
+
+    }
+    .right {
+        .two-columns-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .item.cyan {
+                border-top: 1.5px solid #00E5FF;
+            }
+
+            .item.pink {
+                border-top: 1.5px solid #FF83B7;
+            }
+
+
+            .item {
+                width: 17.188rem;
+                height: 13.125rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 275px;
+                background: #111117;
+                border-top: 1.1662px solid #00E5FF;
+                padding: 0.5rem;
+                margin: 0.5rem;
+
+                img {
+                    margin: auto;
+                }
+
+                p {
+                    margin: auto;
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.read-more {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    a {
+        padding: 0.75rem;
+        margin: 0.75rem 0 8rem 0;
+        background: rgba(16, 19, 20);
+        border: 1px solid rgba(161, 166, 177);
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+    }
+}
+
+
+.section-2 {
+    background: linear-gradient(95.48deg, rgba(56, 56, 63, 0.8) 6.15%, rgba(56, 56, 63, 0) 49.51%, rgba(56, 56, 63, 0.56) 93.23%);
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 4px;
+    min-height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 75px;
+        }
+    }
+
+    .clients {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
 </style>

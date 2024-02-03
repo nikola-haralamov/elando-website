@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "./variables.scss";
+@import "./animations.css";
 
 @tailwind base;
 @tailwind components;
@@ -30,6 +31,12 @@ body {
 
 
 
+.bkg-1 {
+    background-image: url("static/home/what-we-do-section.svg");
+    background-repeat: no-repeat, repeat;
+
+
+}
 
 
 
@@ -62,6 +69,11 @@ body {
 
 .glow-blue.blur-small,.glow-brass.blur-small,.glow-ocean.blur-small,.glow-red.blur-small,.glow.blur-small {
     --tw-blur: blur(40px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.glow-blue.blur-medium,.glow-brass.blur-medium,.glow-ocean.blur-medium,.glow-red.blur-medium,.glow.blur-medium {
+    --tw-blur: blur(80px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 

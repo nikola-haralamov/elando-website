@@ -3,12 +3,6 @@ import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
-
-
-
-
-
-
     <div class="footer-wrapper">
         <section class="footer-1">
             <img src="static/footer-logo.svg" alt="fl" />
@@ -48,7 +42,9 @@ import { Link } from '@inertiajs/vue3';
             </ul>
         </section>
         <section class="footer-3">
-            <img src="static/linked-in.png" alt="linked in" />
+            <div>
+                <img src="static/linked-in.png" alt="linked in" />
+            </div>
         </section>
         <section class="footer-4">
             <div class="contacts">
