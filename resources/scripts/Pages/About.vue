@@ -410,7 +410,7 @@ defineProps({ user: Object })
                     color: #A1A6B1;
                 }
                 a {
-                    margin: 5px 5px;
+                    margin: 5px 10px;
                     max-width: 400px;
                     font-style: normal;
                     font-weight: 700;
