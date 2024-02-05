@@ -31,7 +31,7 @@ defineProps({ user: Object })
                     </div>
                 </div>
                 <div class="animate__animated animate__fadeInDownBig" aria-hidden="true">
-                    <img src="static/home/1-top-left.svg" alt="My Happy SVG" />
+                    <img src="static/shapes/shape-1.svg" alt="My Happy SVG" />
                 </div>
             </div>
             <div class="max-w-full">
@@ -107,37 +107,37 @@ defineProps({ user: Object })
                 </div>
                 <div class="right">
                     <div class="two-columns-grid">
-                        <div class="item cyan">
+                        <div class="item border-top-cyan">
                             <img src="static/icons/it-consulting-services.svg" alt="" />
                             <p>
                                 IT Consulting Services
                             </p>
                         </div>
-                        <div class="item pink">
+                        <div class="item border-top-pink">
                             <img src="static/icons/software-engineering-services.svg" alt="" />
                             <p>
                                 Software Engineering services
                             </p>
                         </div>
-                        <div class="item pink">
+                        <div class="item border-top-pink">
                             <img src="static/icons/blockchain.svg" alt="" />
                             <p>
                                 Blockchain solutions
                             </p>
                         </div>
-                        <div class="item cyan">
+                        <div class="item border-top-cyan">
                             <img src="static/icons/cloud.svg" alt="" />
                             <p>
                                 Cloud solutions
                             </p>
                         </div>
-                        <div class="item cyan">
+                        <div class="item border-top-cyan">
                             <img src="static/icons/mobile-solutions.svg" alt="" />
                             <p>
                                 Mobile solutions
                             </p>
                         </div>
-                        <div class="item pink">
+                        <div class="item border-top-pink">
                             <img src="static/icons/cyber-security.svg" alt="" />
                             <p>
                                 Cyber security solutions
@@ -162,23 +162,30 @@ defineProps({ user: Object })
             </div>
             <div class="clients">
                 <div>
-                    <img src="static/home/clients/client-1.svg" alt="">
+                    <img src="static/home/client-1.svg" alt="" />
                 </div>
                 <div>
-                    <img src="static/home/clients/client-2.svg" alt="">
+                    <img src="static/home/client-2.svg" alt="" />
                 </div>
                 <div>
-                    <img src="static/home/clients/client-3.svg" alt="">
+                    <img src="static/home/client-3.svg" alt="" />
                 </div>
             </div>
         </section>
 
 
+        <section class="footer">
+            <div>
+                <h2>LET'S PARTNER UP!</h2>
+                <p>Contact us to start your digital journey with us!</p>
+            </div>
+        </section>
+
     </Layout>
 </template>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 .section-1 {
     display: flex;
     flex-direction: row;
@@ -186,8 +193,8 @@ defineProps({ user: Object })
 
 .bkg-1 {
     display: flex;
-    background-image: url("../../../public/static/home/what-we-do-section.svg");
-    background-repeat: no-repeat, repeat;
+    background-image: url("../../../public/static/shapes/shape-2.svg");
+    background-repeat: no-repeat, no-repeat;
     background-position-y: bottom;
     min-height: 954px;
     min-width: 903px;
@@ -225,15 +232,6 @@ defineProps({ user: Object })
             display: grid;
             grid-template-columns: 1fr 1fr;
 
-            .item.cyan {
-                border-top: 1.5px solid #00E5FF;
-            }
-
-            .item.pink {
-                border-top: 1.5px solid #FF83B7;
-            }
-
-
             .item {
                 width: 17.188rem;
                 height: 13.125rem;
@@ -242,7 +240,6 @@ defineProps({ user: Object })
                 align-items: flex-start;
                 max-width: 275px;
                 background: #111117;
-                border-top: 1.1662px solid #00E5FF;
                 padding: 0.5rem;
                 margin: 0.5rem;
 
@@ -329,4 +326,43 @@ defineProps({ user: Object })
     }
 }
 
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
+    div {
+        background-image: url("../../../public/static/shapes/shape-7.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, bottom;
+        width: 1289px;
+        height: 525px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 90px;
+        }
+        p {
+            font-family: 'DM Sans', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 150%;
+            text-align: center;
+            color: #A1A6B1;
+        }
+    }
+}
 </style>

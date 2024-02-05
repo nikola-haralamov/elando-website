@@ -12,6 +12,11 @@
     color: $color;
 }
 
+hr {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background: $background;
     width: 100%;
@@ -26,20 +31,81 @@ body {
 }
 
 
+.pages {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
 
+    .wrapper {
+        max-width: 830px;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
 
+        h1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 62px;
+            line-height: 93px;
+        }
 
-
-
-.bkg-1 {
-    background-image: url("static/home/what-we-do-section.svg");
-    background-repeat: no-repeat, repeat;
-
-
+        p {
+            font-family: 'DM Sans', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            color: #A1A6B1;
+        }
+    }
 }
 
+.pages.big {
+    .wrapper {
+        max-width: 1050px;
+        p {
+            color: #FFFFFF;
+        }
+    }
+}
 
-
+.border-top-cyan {
+    //border-top: 0.125rem solid #4BD2E4;
+    border-top: 0.100rem solid #00E5FF;
+}
+.border-top-pink {
+    border-top: 0.100rem solid #FF83B7;
+}
+.border-top-purple {
+    border-top: 0.100rem solid #B34BE4;
+}
+.border-top-yellow {
+    border-top: 0.100rem solid #E1E44B;
+}
+.border-top-red {
+    border-top: 0.100rem solid #E44B4B;
+}
+.border-top-blue {
+    border-top: 0.100rem solid #4B51E4;
+}
 
 .glow-brass {
     --tw-bg-opacity: 1;
