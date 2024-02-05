@@ -13,7 +13,6 @@ defineProps({ user: Object })
             <meta head-key="description" name="description" content="About description" />
         </Head>
 
-
         <section class="list-grid section relative overflow-hidden">
             <div class="glow-blue blur-medium glow-motion -top-60 -left-60 w-[60rem] h-[60rem] -z-10 opacity-50" aria-hidden="true" style="animation-delay: 4s">
             </div>
@@ -29,10 +28,8 @@ defineProps({ user: Object })
                         custom software applications to maintenance of existing applications.
                     </p>
                 </div>
-
-                <img src="static/center-baloon.svg" alt="">
+                <img src="static/center-baloon.svg" alt="" />
             </section>
-
 
             <section class="our-team">
                     <h2>Our team</h2>
@@ -73,7 +70,6 @@ defineProps({ user: Object })
                     </div>
                 </div>
             </section>
-
 
             <section class="values">
                 <div class="wrap">
@@ -124,8 +120,6 @@ defineProps({ user: Object })
                 </div>
             </section>
 
-
-
             <section class="careers">
                 <div class="wrap">
                     <h2>Careers</h2>
@@ -162,8 +156,6 @@ defineProps({ user: Object })
                 </div>
             </section>
 
-
-
         </section>
     </Layout>
 </template>
@@ -180,7 +172,6 @@ defineProps({ user: Object })
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 3rem;
-
         .wrap {
             max-width: 830px;
             justify-content: center;
@@ -406,7 +397,6 @@ defineProps({ user: Object })
             align-items: center;
             margin-top: 3rem;
             margin-bottom: 3rem;
-
             h2 {
                 margin-bottom: 1rem;
                 display: flex;
@@ -420,8 +410,6 @@ defineProps({ user: Object })
                 font-size: 50px;
                 line-height: 130%;
             }
-
-
             .items {
                 gap: 25px;
                 max-width: 1000px;
@@ -431,16 +419,12 @@ defineProps({ user: Object })
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-
-
                 .item.cyan {
                     border-top: 1.1662px solid #4BD2E4;
                 }
-
                 .item.pink {
                     border-top: 1.1662px solid #FF83B7;
                 }
-
                 .item {
                     background: rgba(21, 21, 29, 0.81);
                     background: linear-gradient(90deg, rgba(17,20,27,1) 0%, rgba(17,20,27,1) 86%, rgba(49,82,91,1) 100%);
@@ -495,9 +479,6 @@ defineProps({ user: Object })
                     }
                 }
             }
-
-
         }
     }
-
 </style>
