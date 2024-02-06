@@ -173,6 +173,27 @@ defineProps({ user: Object })
             </div>
         </section>
 
+        <section class="list-grid section relative overflow-hidden pb-56">
+            <div class="glow-red blur-large glow-motion top-[32rem] left-[60rem] w-[15rem] h-[25rem] -z-10" aria-hidden="true" style="animation-delay: 2s">
+            </div>
+            <div class="glow-blue blur-medium glow-motion top-64 -left-60 w-[40rem] h-[40rem] -z-10" aria-hidden="true" style="animation-delay: 4s">
+            </div>
+            <section class="section-3">
+                <div class="text">
+                    <h1>Our partnerships</h1>
+                    <p>
+                        Our process emphasizes fast, lucrative exits for software founders
+                    </p>
+                </div>
+            </section>
+            <div class="bkg-2-wrap">
+                <div class="img-wrap">
+                    <img src="static/home/partnerships.png" alt="" />
+                </div>
+                <div class="bkg-2 -z-10">
+                </div>
+            </div>
+        </section>
 
         <section class="footer">
             <div>
@@ -259,6 +280,66 @@ defineProps({ user: Object })
                 }
             }
         }
+    }
+}
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 28rem;
+        margin-top: 10rem;
+        margin-left: 55rem;
+        h1 {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 75px;
+        }
+
+        p {
+            font-family: 'DM Sans', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+            color: #A1A6B1;
+        }
+    }
+}
+
+.bkg-2-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    .img-wrap {
+        position: relative;
+        right: 12rem;
+    }
+    .bkg-2 {
+        gap: 5rem;
+        display: flex;
+        background-image: url("../../../public/static/shapes/shape-8.svg");
+        background-repeat: no-repeat, no-repeat;
+        min-height: 624px;
+        min-width: 476px;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
     }
 }
 
