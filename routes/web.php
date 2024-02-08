@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
@@ -24,3 +25,13 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/technology', [TechnologyController::class, 'index'])->name('technology');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
+
+
+Route::post('locale', function () {
+    $validated = request()->validate([
+        'language' => ['required'],
+    ]);
+    App::setLocale($validated['language']);
+    session()->put('locale', $validated['language']);
+    return redirect()->back();
+});

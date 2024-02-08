@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres:alpine
+    restart: always
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    networks:
+      - bridge
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: elestio/pgadmin:latest
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+      PGADMIN_LISTEN_PORT: ${PGADMIN_PORT}
+    ports:
+      - "${PGADMIN_PORT}:${PGADMIN_PORT}"
+    depends_on:
+      - postgres
+    networks:
+      - bridge
+    volumes:
+      - ./pgadmin-servers.json:/pgadmin4/servers.json
+
+networks:
+  bridge:
+    driver: bridge
