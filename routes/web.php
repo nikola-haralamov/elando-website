@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App;
+//use Illuminate\Support\Facades\App;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
@@ -27,11 +27,28 @@ Route::get('/technology', [TechnologyController::class, 'index'])->name('technol
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 
 
-Route::post('locale', function () {
-    $validated = request()->validate([
-        'language' => ['required'],
-    ]);
-    App::setLocale($validated['language']);
-    session()->put('locale', $validated['language']);
+//Route::get('/{locale?}', function ($locale = null) {
+//    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
+//        app()->setLocale($locale);
+//    }
+//
+//    return view('welcome');
+//});
+
+Route::match(['get', 'post'], 'language/{locale}', function ($locale) {
+    if (isset($locale) && array_key_exists($locale, config('app.available_locales'))) {
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+    }
     return redirect()->back();
 });
+
+
+//Route::post('locale', function () {
+//    $validated = request()->validate([
+//        'language' => ['required'],
+//    ]);
+//    App::setLocale($validated['language']);
+//    session()->put('locale', $validated['language']);
+//    return redirect()->back();
+//});

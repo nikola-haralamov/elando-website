@@ -13,6 +13,7 @@
     @inertiaHead
 </head>
 <body>
+<x-translations></x-translations>
 @inertia
 @vite('resources/scripts/app.js')
 </body>

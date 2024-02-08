@@ -2,6 +2,7 @@ import './bootstrap';
 import 'animate.css';
 import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
+import { translations } from "./translations";
 
 createInertiaApp({
     resolve: name => {
@@ -11,6 +12,7 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
             .use(plugin)
+            .mixin(translations)
             .mount(el)
     },
 });

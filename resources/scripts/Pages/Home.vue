@@ -25,8 +25,7 @@ defineProps({ user: Object })
                 <div class="grid h-auto place-items-center animate__animated animate__fadeInUp" aria-hidden="true">
                     <div class="flex items-center lg:block lg:ml-60" style="max-width: 750px">
                         <h1 class="lg:text-8xl md:text-7xl font-extrabold">
-                            The experts in
-                            the land of IT
+                            {{ __("The experts in the land of IT :name", {name: $page.props.user.name}) }}
                         </h1>
                     </div>
                 </div>
