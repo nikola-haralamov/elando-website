@@ -20,5 +20,5 @@ defineProps({ user: Object })
 
 
 <style scoped lang="scss">
-
+@import "../../assets/styles/variables.scss";
 </style>

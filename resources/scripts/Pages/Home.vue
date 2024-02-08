@@ -206,6 +206,7 @@ defineProps({ user: Object })
 
 
 <style scoped lang="scss">
+@import "../../assets/styles/variables.scss";
 .section-1 {
     display: flex;
     flex-direction: row;
@@ -231,14 +232,14 @@ defineProps({ user: Object })
         flex-wrap: wrap;
         justify-content: center;
         h3 {
-            font-family: 'Poppins',serif;
+            font-family: $font;
             font-style: normal;
             font-weight: 300;
             font-size: 50px;
             line-height: 75px;
         }
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -269,7 +270,7 @@ defineProps({ user: Object })
 
                 p {
                     margin: auto;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: $font;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 16px;
@@ -308,7 +309,7 @@ defineProps({ user: Object })
         }
 
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -435,7 +436,7 @@ defineProps({ user: Object })
             line-height: 90px;
         }
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 22px;

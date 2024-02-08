@@ -136,6 +136,7 @@ defineProps({ user: Object })
 </template>
 
 <style scoped lang="scss">
+@import "../../assets/styles/variables.scss";
 .technology {
     max-width: 1200px;
     display: flex;
@@ -154,7 +155,7 @@ defineProps({ user: Object })
         line-height: 130%;
     }
     p {
-        font-family: 'DM Sans', serif;
+        font-family: $font-small;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -239,7 +240,7 @@ defineProps({ user: Object })
             line-height: 90px;
         }
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 22px;

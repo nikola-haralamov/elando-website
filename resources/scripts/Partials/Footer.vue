@@ -59,6 +59,7 @@ import { Link } from '@inertiajs/vue3';
 </template>
 
 <style lang="scss">
+@import "../../assets/styles/variables.scss";
 footer {
     position: relative;
     background-color: rgb(21, 21, 29);
@@ -79,7 +80,7 @@ footer {
             max-width: 380px;
             p {
                 padding: 30px 0 30px 0;
-                font-family: 'DM Sans',serif;
+                font-family: $font-small;
                 font-size: 0.875rem;
                 line-height: 1.313rem;
                 color: rgb(108,108, 114);
@@ -140,11 +141,11 @@ footer {
                 }
                 p {
                     max-width: 250px;
+                    font-family: $font-small;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 24px;
                     color: rgba(171, 171, 174);
-                    font-family: 'DM Sans', sans-serif;
                 }
 
                 a {

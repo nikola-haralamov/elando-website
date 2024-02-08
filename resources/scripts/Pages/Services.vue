@@ -133,6 +133,7 @@ defineProps({ user: Object })
 
 
 <style scoped lang="scss">
+@import "../../assets/styles/variables.scss";
 .services {
     max-width: 1250px;
     display: flex;
@@ -173,7 +174,7 @@ defineProps({ user: Object })
             text-align: center;
         }
         p  {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 700;
             font-size: 12px;
@@ -241,7 +242,7 @@ defineProps({ user: Object })
                     margin-top: 10px;
                     margin-left: 10px;
                     margin-bottom: 25px;
-                    font-family: 'DM Sans', serif;
+                    font-family: $font-small;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 18px;
@@ -259,7 +260,7 @@ defineProps({ user: Object })
                 span {
                     margin-top: 5px;
                     margin-left: 10px;
-                    font-family: 'DM Sans', serif;
+                    font-family: $font-small;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 12px;
@@ -300,7 +301,7 @@ defineProps({ user: Object })
             line-height: 90px;
         }
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 22px;

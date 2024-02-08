@@ -161,6 +161,7 @@ defineProps({ user: Object })
 </template>
 
 <style scoped lang="scss">
+@import "../../assets/styles/variables.scss";
 .team {
     margin-bottom: 3rem;
     h2 {
@@ -227,7 +228,7 @@ defineProps({ user: Object })
                 }
                 p.description {
                     margin-top: 1rem;
-                    font-family: 'DM Sans', serif;
+                    font-family: $font-small;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 12px;
@@ -275,7 +276,7 @@ defineProps({ user: Object })
             line-height: 130%;
         }
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -301,7 +302,7 @@ defineProps({ user: Object })
                 text-align: center;
             }
             p {
-                font-family: 'DM Sans', serif;
+                font-family: $font-small;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;
@@ -401,7 +402,7 @@ defineProps({ user: Object })
                 p {
                     margin: 10px 10px;
                     max-width: 400px;
-                    font-family: 'DM Sans', serif;
+                    font-family: $font-small;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 12px;

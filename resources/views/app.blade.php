@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=DM+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic" />
     <link rel="icon" type="image/svg+xml" href="./static/logo.svg" />
     @vite('resources/assets/styles/app.scss')
     @inertiaHead

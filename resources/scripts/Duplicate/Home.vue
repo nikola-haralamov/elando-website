@@ -207,14 +207,14 @@ defineProps({ user: Object })
         flex-wrap: wrap;
         justify-content: flex-start;
         h3 {
-            font-family: 'Poppins',serif;
+            font-family: $font;
             font-style: normal;
             font-weight: 300;
             font-size: 50px;
             line-height: 75px;
         }
         p {
-            font-family: 'DM Sans', serif;
+            font-family: $font-small;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -255,7 +255,7 @@ defineProps({ user: Object })
 
                 p {
                     margin: auto;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: $font;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 16px;
