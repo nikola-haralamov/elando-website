@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TechnologyController;
+use App\Http\Controllers\SuccessStoriesController;
 use App\Http\Controllers\ContactsController;
 
 /*
@@ -25,6 +26,7 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/technology', [TechnologyController::class, 'index'])->name('technology');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
+Route::get('/success-stories', [SuccessStoriesController::class, 'index'])->name('success-stories');
 
 
 //Route::get('/{locale?}', function ($locale = null) {
