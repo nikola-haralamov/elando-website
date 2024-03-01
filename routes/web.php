@@ -28,6 +28,15 @@ Route::get('/technology', [TechnologyController::class, 'index'])->name('technol
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/success-stories', [SuccessStoriesController::class, 'index'])->name('success-stories');
 
+Route::match(['get', 'post'], 'language/{locale?}', function (string $locale = null) {
+    if (isset($locale) && array_key_exists($locale, config('app.available_locales'))) {
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+    } else {
+        abort(400);
+    }
+    return redirect()->back();
+});
 
 //Route::get('/{locale?}', function ($locale = null) {
 //    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
@@ -36,15 +45,6 @@ Route::get('/success-stories', [SuccessStoriesController::class, 'index'])->name
 //
 //    return view('welcome');
 //});
-
-Route::match(['get', 'post'], 'language/{locale}', function ($locale) {
-    if (isset($locale) && array_key_exists($locale, config('app.available_locales'))) {
-        app()->setLocale($locale);
-        session()->put('locale', $locale);
-    }
-    return redirect()->back();
-});
-
 
 //Route::post('locale', function () {
 //    $validated = request()->validate([

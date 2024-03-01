@@ -70,6 +70,18 @@ RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p /home/$user/.composer && \
     chown -R $user:$user /home/$user
 
+
+COPY ./ /var/www
+
+#RUN cd /var/www/ && php artisan cache:clear
+RUN chmod -R 775 /var/www/storage
+RUN chmod -R 775 /var/www/bootstrap/cache
+#RUN cd /var/www/ && composer dump-autoload
+
+
+#RUN chmod -R 777 /var/www/storage
+#RUN chmod -R 777 /var/www/bootstrap/cache/
+
 WORKDIR /var/www/
 
 USER $user

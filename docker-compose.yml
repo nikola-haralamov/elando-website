@@ -1,24 +1,24 @@
 version: '3.8'
 
 services:
-  php:
-    build:
-      args:
-        user: user
-        uid: 1000
-      context: .
-      dockerfile: ./docker/Dockerfile
-    container_name: php
-#    image: app-php
-    restart: unless-stopped
-    #tty: true
-    ports:
-      - "9000:9000"
-    volumes:
-      - ./:/var/www/
-    working_dir: /var/www/
-    networks:
-      - app-network
+#  php:
+#    build:
+#      args:
+#        user: user
+#        uid: 1000
+#      context: .
+#      dockerfile: ./docker/Dockerfile
+#    container_name: php
+##    image: app-php
+#    restart: unless-stopped
+#    #tty: true
+#    ports:
+#      - "9000:9000"
+#    volumes:
+#      - ./:/var/www/
+#    working_dir: /var/www/
+#    networks:
+#      - app-network
 
   postgres:
     container_name: postgres
@@ -52,19 +52,19 @@ services:
     networks:
       - app-network
 
-  nginx:
-    image: nginx:alpine
-    container_name: nginx
-    restart: unless-stopped
-    #tty: true
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./:/var/www/
-      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
-    networks:
-      - app-network
+#  nginx:
+#    image: nginx:alpine
+#    container_name: nginx
+#    restart: unless-stopped
+#    #tty: true
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    volumes:
+#      - ./:/var/www/
+#      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+#    networks:
+#      - app-network
 
 networks:
   app-network:
