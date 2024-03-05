@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Illuminate\Database\Seeder;
 use App\Models\User;
 
 class CreateFirstUser extends Seeder
@@ -14,12 +15,16 @@ class CreateFirstUser extends Seeder
      */
     public function run(): void
     {
-         User::create([
-             'name' => 'Admin',
-             'email' => 'admin@elando.com',
-             'email_verified_at' => now(),
-             'password' => static::$password ??= Hash::make('password123'),
-             'remember_token' => Str::random(10),
-         ]);
+        User::firstOrCreate(
+            [
+                'email' => 'admin@elando.com',
+            ],
+            [
+            'name' => 'Admin',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password123'),
+            'remember_token' => Str::random(10),
+            ],
+        );
     }
 }

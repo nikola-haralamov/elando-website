@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index(): Response
     {
-        $user = new User(['name' => 'Nikola']);
+        $user = User::where('email', 'admin@elando.com')->first();
 
         return Inertia::render('Home',  [
             'user' => $user,
