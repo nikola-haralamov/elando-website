@@ -8,6 +8,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TechnologyController;
 use App\Http\Controllers\SuccessStoriesController;
+use App\Http\Controllers\SuccessStoryOneController;
 use App\Http\Controllers\ContactsController;
 
 /*
@@ -27,6 +28,8 @@ Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/technology', [TechnologyController::class, 'index'])->name('technology');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/success-stories', [SuccessStoriesController::class, 'index'])->name('success-stories');
+Route::get('/success-stories/success-story-one', [SuccessStoryOneController::class, 'index'])
+    ->name('success-story-one');
 
 Route::match(['get', 'post'], 'language/{locale?}', function (string $locale = null) {
     if (isset($locale) && array_key_exists($locale, config('app.available_locales'))) {
