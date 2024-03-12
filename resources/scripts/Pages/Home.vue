@@ -30,7 +30,7 @@ defineProps({ user: Object })
                     </div>
                 </div>
                 <div class="animate__animated animate__fadeInDownBig" aria-hidden="true">
-                    <img src="static/shapes/shape-1.svg" alt="My Happy SVG" />
+                    <img src="/static/shapes/shape-1.svg" alt="My Happy SVG" />
                 </div>
             </div>
             <div class="max-w-full">

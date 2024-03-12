@@ -12,7 +12,7 @@ class SuccessStoryOneController extends Controller
     {
         $user = new User(['name' => 'Lisko']);
 
-        return Inertia::render('SuccessStories/SuccessStoryOne',  [
+        return inertia('SuccessStories/SuccessStoryOne',  [
             'user' => $user,
         ]);
     }

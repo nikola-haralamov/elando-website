@@ -35,7 +35,7 @@ defineProps({ user: Object })
                     <h2>Case Studies</h2>
                     <div class="items">
                         <div class="item border-top-yellow">
-                            <img src="static/success-stories/case-study-1.png"
+                            <img src="/static/success-stories/case-study-1.png"
                                  alt="Digital Transformation – Development of a Digital Insurance Platform" />
                             <h3>Digital Transformation – Development of a Digital Insurance Platform</h3>
                             <p>
@@ -45,7 +45,7 @@ defineProps({ user: Object })
                             </p>
                         </div>
                         <div class="item border-top-yellow">
-                            <img src="static/success-stories/case-study-2.png"
+                            <img src="/static/success-stories/case-study-2.png"
                                  alt="Digital Transformation – Development of a Digital Insurance Platform" />
                             <h3>Digital Transformation – Development of a Digital Insurance Platform</h3>
                             <p>
@@ -55,7 +55,7 @@ defineProps({ user: Object })
                             </p>
                         </div>
                         <div class="item border-top-yellow">
-                            <img src="static/success-stories/case-study-3.png"
+                            <img src="/static/success-stories/case-study-3.png"
                                  alt="Digital Transformation – Development of a Digital Insurance Platform" />
                             <h3>Digital Transformation – Development of a Digital Insurance Platform</h3>
                             <p>
@@ -74,31 +74,31 @@ defineProps({ user: Object })
 
                     <div class="items">
                         <div class="item">
-                            <img src="static/success-stories/partners/bianor.svg" alt="Bianor" />
+                            <img src="/static/success-stories/partners/bianor.svg" alt="Bianor" />
                         </div>
                         <div class="item">
-                            <img src="static/success-stories/partners/at-t.svg" alt="AT & T" />
+                            <img src="/static/success-stories/partners/at-t.svg" alt="AT & T" />
                         </div>
                         <div class="item">
-                            <img src="static/success-stories/partners/amexis.svg" alt="amexis" />
+                            <img src="/static/success-stories/partners/amexis.svg" alt="amexis" />
                         </div>
                         <div class="item">
-                            <img src="static/success-stories/partners/adastra.svg" alt="adastra" />
+                            <img src="/static/success-stories/partners/adastra.svg" alt="adastra" />
                         </div>
 
 
 
                         <div class="item">
-                            <img src="static/success-stories/partners/alianz.svg" alt="Alianz" />
+                            <img src="/static/success-stories/partners/alianz.svg" alt="Alianz" />
                         </div>
                         <div class="item">
-                            <img src="static/success-stories/partners/harley.svg" alt="Harley" />
+                            <img src="/static/success-stories/partners/harley.svg" alt="Harley" />
                         </div>
                         <div class="item">
-                            <img src="static/success-stories/partners/scalefocus.svg" alt="Scalefocus" />
+                            <img src="/static/success-stories/partners/scalefocus.svg" alt="Scalefocus" />
                         </div>
                         <div class="item">
-                            <img src="static/success-stories/partners/volkswagen.svg" alt="Volkswagen" />
+                            <img src="/static/success-stories/partners/volkswagen.svg" alt="Volkswagen" />
                         </div>
 
                     </div>

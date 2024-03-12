@@ -6,16 +6,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=DM+Sans" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic" />
-    <link rel="icon" type="image/svg+xml" href="./static/logo.svg" />
-    @vite('resources/assets/styles/app.scss')
+    <link rel="icon" type="image/svg+xml" href="/static/logo.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+    @routes
+    @vite('resources/assets/styles/admin.scss')
     @inertiaHead
 </head>
 <body>
 <x-translations></x-translations>
 @inertia
-@vite('resources/scripts/app.js')
+@vite(['resources/scripts/app.js', "resources/scripts/Pages/{$page['component']}.vue"])
 </body>
 </html>

@@ -6,9 +6,11 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/assets/styles/app.scss',
+                'resources/assets/styles/web.scss',
+                'resources/assets/styles/admin.scss',
                 'resources/scripts/app.js',
             ],
+            ssr: 'resources/scripts/ssr.js',
             refresh: true,
         }),
         vue({
