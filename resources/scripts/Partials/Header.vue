@@ -5,7 +5,7 @@ import { Link } from '@inertiajs/vue3';
 <template>
     <div class="header-wrapper">
         <div class="logo">
-            <img src="static/logo.svg" alt="" width="86" height="58" />
+            <img src="/static/logo.svg" alt="" width="86" height="58" />
         </div>
         <nav>
             <div class="toggle-btn"></div>

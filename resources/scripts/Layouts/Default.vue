@@ -1,5 +1,7 @@
 <script setup>
-    import { Head } from '@inertiajs/vue3'
+import { Head } from '@inertiajs/vue3';
+import Header from '../Partials/Header';
+import Footer from '../Partials/Footer';
 </script>
 
 <template>
@@ -19,11 +21,3 @@
     </footer>
 </template>
 
-<script>
-import Header from '../Partials/Header';
-import Footer from '../Partials/Footer';
-
-export default {
-    components: { Header, Footer }
-}
-</script>

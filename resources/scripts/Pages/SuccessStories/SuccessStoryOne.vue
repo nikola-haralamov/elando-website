@@ -1,6 +1,8 @@
 <script setup>
-import Layout from '../../Layouts/Default'
-import { Head } from '@inertiajs/vue3'
+import Layout from '../../Layouts/Default';
+import Breadcrumbs from "../../Partials/Breadcrumbs";
+import { Head } from '@inertiajs/vue3';
+
 
 defineProps({ user: Object })
 
@@ -9,7 +11,7 @@ defineProps({ user: Object })
 <template>
     <Layout>
         <Head>
-            <title>Success Stories</title>
+            <title>Success Story One</title>
             <meta head-key="description" name="description" content="Success Story One" />
         </Head>
 
@@ -19,14 +21,12 @@ defineProps({ user: Object })
             <div class="glow-blue blur-medium glow-motion top-96 -right-60 w-[50rem] h-[50rem] -z-10 opacity-50" aria-hidden="true">
             </div>
 
-            <section class="pages">
+            <section class="pages big">
                 <div class="wrapper">
-                    <h1>Success Story One</h1>
-                    <p>
-                        eLando is a professional services company and we have provided technology expertise and
-                        software solutions for years. Our services range from complete design and development of
-                        custom software applications to maintenance of existing applications.
-                    </p>
+
+                    <header>
+                        <Breadcrumbs />
+                    </header>
                 </div>
             </section>
 
