@@ -10,7 +10,7 @@ export default defineConfig({
                 'resources/assets/styles/admin.scss',
                 'resources/scripts/app.js',
             ],
-            //ssr: 'resources/scripts/ssr.js',
+            ssr: 'resources/scripts/ssr.js',
             refresh: true,
         }),
         vue({

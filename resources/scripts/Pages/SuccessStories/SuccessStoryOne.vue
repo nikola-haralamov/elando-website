@@ -1,10 +1,13 @@
 <script setup>
 import Layout from '../../Layouts/Default';
 import Breadcrumbs from "../../Partials/Breadcrumbs";
-import { Head } from '@inertiajs/vue3';
+import { Head, Link } from '@inertiajs/vue3';
 
-
-defineProps({ user: Object })
+defineProps({
+    breadcrumbs: {
+        type: Object,
+    },
+});
 
 </script>
 
@@ -21,16 +24,15 @@ defineProps({ user: Object })
             <div class="glow-blue blur-medium glow-motion top-96 -right-60 w-[50rem] h-[50rem] -z-10 opacity-50" aria-hidden="true">
             </div>
 
-            <section class="pages big">
-                <div class="wrapper">
-
-                    <header>
-                        <Breadcrumbs />
-                    </header>
+            <section class="row">
+                <div class="wrapper flex-start big !my-0">
+                    <div class="row flex-start m-8" style="width: 1200px;">
+                        <Breadcrumbs :breadcrumbs="breadcrumbs" />
+                    </div>
                 </div>
             </section>
 
-            <section class="pages big">
+            <section class="row">
                 <section class="case-studies">
                     <h2>Case Studies</h2>
                     <div class="items">
@@ -116,6 +118,46 @@ defineProps({ user: Object })
 
 <style scoped lang="scss">
 @import "../../../assets/styles/variables.scss";
+
+nav.breadcrumbs {
+    display: flex;
+    ol {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+
+
+            a:focus {
+                outline: thin dotted;
+            }
+
+            a:link {
+                touch-action: manipulation;
+            }
+
+            a:active,
+            a:hover {
+                outline: 0;
+            }
+
+            a:visited:not([rel='external']) {
+                color: #007c89;
+            }
+
+        }
+    }
+}
+
+
+
 .case-studies {
     max-width: 1200px;
     display: flex;

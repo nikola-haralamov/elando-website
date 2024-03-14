@@ -2,18 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Route;
 use Inertia\Response;
 use Inertia\Inertia;
-use App\Models\User;
 
 class SuccessStoryOneController extends Controller
 {
     public function index(): Response
     {
-        $user = new User(['name' => 'Lisko']);
+        $breadcrumbs = [
+            [
+                'label' => 'Success Stories',
+                'route' => 'success-stories',
+                'exist' => Route::has('success-stories'),
+            ],
+            [
+                'label' => 'Success Story One',
+                'route' => 'success-story-one',
+                'exist' => Route::has('success-story-one'),
+            ],
+        ];
 
-        return inertia('SuccessStories/SuccessStoryOne',  [
-            'user' => $user,
+        return Inertia::render('SuccessStories/SuccessStoryOne',  [
+            'breadcrumbs' => $breadcrumbs,
         ]);
     }
 }

@@ -19,8 +19,8 @@ defineProps({ user: Object });
             <div class="glow-blue blur-medium glow-motion top-96 -right-60 w-[50rem] h-[50rem] -z-10 opacity-50" aria-hidden="true">
             </div>
 
-            <section class="pages big">
-                <div class="wrapper">
+            <section class="row">
+                <div class="wrapper m-8">
                     <h1>Technology</h1>
                     <p>
                         eLando provides a complete range of software development and IT consulting services,
@@ -30,98 +30,98 @@ defineProps({ user: Object });
                         possibilities and gain a competitive edge.
                     </p>
                 </div>
+            </section>
 
-                <section class="technology">
-                    <hr class="border-top-cyan" />
-                    <h2>Front-end</h2>
-                    <p>
-                        Front-end development involves creating and implementing the user interface
-                        of a website or application, focusing on the visual and interactive elements
-                        that users directly interact with. It requires a combination of coding skills,
-                        design principles, and usability considerations to deliver an
-                        engaging and intuitive user experience.
-                    </p>
-                    <div class="items" data-columns="5">
-                        <div class="item border-top-pink">react</div>
-                        <div class="item border-top-pink">angular</div>
-                        <div class="item border-top-pink">vue.js</div>
-                        <div class="item border-top-pink">java script</div>
-                        <div class="item border-top-pink">html & css</div>
-                    </div>
-                </section>
+            <section class="row">
+                <div class="wrapper big m-8">
+                    <section class="technology">
+                        <hr class="border-top-cyan" />
+                        <h2>Front-end</h2>
+                        <p>
+                            Front-end development involves creating and implementing the user interface
+                            of a website or application, focusing on the visual and interactive elements
+                            that users directly interact with. It requires a combination of coding skills,
+                            design principles, and usability considerations to deliver an
+                            engaging and intuitive user experience.
+                        </p>
+                        <div class="items" data-columns="5">
+                            <div class="item border-top-pink">react</div>
+                            <div class="item border-top-pink">angular</div>
+                            <div class="item border-top-pink">vue.js</div>
+                            <div class="item border-top-pink">java script</div>
+                            <div class="item border-top-pink">html & css</div>
+                        </div>
+                    </section>
 
+                    <section class="technology">
+                        <hr class="border-top-cyan" />
+                        <h2>Back-end</h2>
+                        <p>
+                            Backend refers to the underlying components and functionality that power a software
+                            application or website, often unseen by users. It includes server-side operations,
+                            databases, and the logic that handles data processing,
+                            user authentication, and the communication between the server and the client.
+                        </p>
+                        <div class="items" data-columns="3">
+                            <div class="item border-top-pink">java</div>
+                            <div class="item border-top-pink">node js</div>
+                            <div class="item border-top-pink">.net</div>
+                            <div class="item border-top-pink">unity</div>
+                            <div class="item border-top-pink">python</div>
+                            <div class="item border-top-pink">ruby on rails</div>
+                        </div>
+                    </section>
 
-                <section class="technology">
-                    <hr class="border-top-cyan" />
-                    <h2>Back-end</h2>
-                    <p>
-                        Backend refers to the underlying components and functionality that power a software
-                        application or website, often unseen by users. It includes server-side operations,
-                        databases, and the logic that handles data processing,
-                        user authentication, and the communication between the server and the client.
-                    </p>
-                    <div class="items" data-columns="3">
-                        <div class="item border-top-pink">java</div>
-                        <div class="item border-top-pink">node js</div>
-                        <div class="item border-top-pink">.net</div>
-                        <div class="item border-top-pink">unity</div>
-                        <div class="item border-top-pink">python</div>
-                        <div class="item border-top-pink">ruby on rails</div>
-                    </div>
-                </section>
+                    <section class="technology">
+                        <hr class="border-top-cyan" />
+                        <h2>Mobile</h2>
+                        <p>
+                            Mobile app development involves utilizing various technologies to create applications
+                            for mobile devices such as smartphones and tablets. These technologies include
+                            programming languages like Swift (for iOS) and Java or Kotlin (for Android),
+                            frameworks such as React Native and Flutter for cross-platform development,
+                            and tools like Xcode and Android Studio for building, testing, and deploying mobile apps.
+                        </p>
+                        <div class="items" data-columns="4">
+                            <div class="item border-top-pink">ios</div>
+                            <div class="item border-top-pink">android</div>
+                            <div class="item border-top-pink">flutter</div>
+                            <div class="item border-top-pink">react native</div>
+                            <div class="item border-top-pink">xamarin</div>
+                            <div class="item border-top-pink">.net maui</div>
+                            <div class="item border-top-pink">switft</div>
+                            <div class="item border-top-pink">kotlin</div>
+                        </div>
+                    </section>
 
-
-                <section class="technology">
-                    <hr class="border-top-cyan" />
-                    <h2>Mobile</h2>
-                    <p>
-                        Mobile app development involves utilizing various technologies to create applications
-                        for mobile devices such as smartphones and tablets. These technologies include
-                        programming languages like Swift (for iOS) and Java or Kotlin (for Android),
-                        frameworks such as React Native and Flutter for cross-platform development,
-                        and tools like Xcode and Android Studio for building, testing, and deploying mobile apps.
-                    </p>
-                    <div class="items" data-columns="4">
-                        <div class="item border-top-pink">ios</div>
-                        <div class="item border-top-pink">android</div>
-                        <div class="item border-top-pink">flutter</div>
-                        <div class="item border-top-pink">react native</div>
-                        <div class="item border-top-pink">xamarin</div>
-                        <div class="item border-top-pink">.net maui</div>
-                        <div class="item border-top-pink">switft</div>
-                        <div class="item border-top-pink">kotlin</div>
-                    </div>
-                </section>
-
-
-                <section class="technology">
-                    <hr class="border-top-cyan" />
-                    <h2>Platforms</h2>
-                    <p>
-                        In the current dynamic and fast pacing world each organization is bound to
-                        provide options for its customers and employees to use and access software
-                        systems on the road through a mobile device. We are here to help you with the
-                        development of iOS, Android, Windows Phone, and other devices on the market.
-                        eLando is focusing on enterprise grade mobile solutions that allow seamless
-                        user experience and integration with backend systems.
-                    </p>
-                    <p>
-                        We can offer native development skills for each mobile device platform,
-                        as well as application of the multi-platform development frameworks that
-                        allow faster time to market, addressing more than one device types with one shot,
-                        while still preserving the quality of the solution and the user experience.
-                        Our QA engineers are specialized in testing on mobile platforms,
-                        equipped with many different devices, emulators, and tools.
-                    </p>
-                    <div class="items" data-columns="5">
-                        <div class="item border-top-pink">aws</div>
-                        <div class="item border-top-pink">azure</div>
-                        <div class="item border-top-pink">gcp</div>
-                        <div class="item border-top-pink">salesforce</div>
-                        <div class="item border-top-pink">heroku</div>
-                    </div>
-                </section>
-
+                    <section class="technology">
+                        <hr class="border-top-cyan" />
+                        <h2>Platforms</h2>
+                        <p>
+                            In the current dynamic and fast pacing world each organization is bound to
+                            provide options for its customers and employees to use and access software
+                            systems on the road through a mobile device. We are here to help you with the
+                            development of iOS, Android, Windows Phone, and other devices on the market.
+                            eLando is focusing on enterprise grade mobile solutions that allow seamless
+                            user experience and integration with backend systems.
+                        </p>
+                        <p>
+                            We can offer native development skills for each mobile device platform,
+                            as well as application of the multi-platform development frameworks that
+                            allow faster time to market, addressing more than one device types with one shot,
+                            while still preserving the quality of the solution and the user experience.
+                            Our QA engineers are specialized in testing on mobile platforms,
+                            equipped with many different devices, emulators, and tools.
+                        </p>
+                        <div class="items" data-columns="5">
+                            <div class="item border-top-pink">aws</div>
+                            <div class="item border-top-pink">azure</div>
+                            <div class="item border-top-pink">gcp</div>
+                            <div class="item border-top-pink">salesforce</div>
+                            <div class="item border-top-pink">heroku</div>
+                        </div>
+                    </section>
+                </div>
             </section>
 
             <section class="footer">
@@ -146,7 +146,7 @@ defineProps({ user: Object });
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 6rem;
+    //margin: 2rem;
 
     h2 {
         font-style: normal;
@@ -164,14 +164,13 @@ defineProps({ user: Object });
     }
 
     .items {
+        width: 100%;
         --columns-count: 2;
-        margin: 0 auto;
         display: grid;
         gap: 1rem;
-        width: 1200px;
         max-width: 1200px;
         grid-template-columns: repeat(var(--columns-count), 1fr);
-        margin-bottom: 3rem;
+        margin: 0 auto 3rem;
 
         //display: flex;
         //flex-direction: row;
@@ -180,7 +179,7 @@ defineProps({ user: Object });
         //flex-wrap: wrap;
         //align-content: center;
         //gap: 15px;
-        margin-bottom: 3rem;
+        //margin-bottom: 3rem;
 
         .item {
             display: flex;
@@ -253,16 +252,19 @@ defineProps({ user: Object });
 
 @media only screen and (max-width: 1200px) {
     .items {
+        //width: 1100px;
         --columns-count: 4!important;
     }
 }
 @media only screen and (max-width: 992px) {
     .items {
+        //width: 950px;
         --columns-count: 3!important;
     }
 }
 @media only screen and (max-width: 767px) {
     .items {
+        //width: auto!important;
         --columns-count: 2!important;
     }
 }

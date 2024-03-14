@@ -19,8 +19,8 @@ defineProps({ user: Object })
             <div class="glow-blue blur-medium glow-motion top-96 -right-60 w-[50rem] h-[50rem] -z-10 opacity-50" aria-hidden="true">
             </div>
 
-            <section class="pages">
-                <div class="wrapper">
+            <section class="row">
+                <div class="wrapper small">
                     <h1>Services</h1>
                     <p>
                         eLando is a professional services company and we have provided technology expertise and
@@ -28,7 +28,9 @@ defineProps({ user: Object })
                         custom software applications to maintenance of existing applications.
                     </p>
                 </div>
+            </section>
 
+            <section class="row">
                 <div class="services">
                     <div class="service border-top-cyan">
                         <img src="static/icons/it-consulting-services.svg" alt="Tech consulting services" />

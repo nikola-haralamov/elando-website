@@ -19,10 +19,10 @@ defineProps({ user: Object });
             <div class="glow-blue blur-medium glow-motion top-96 -right-60 w-[50rem] h-[50rem] -z-10 opacity-50" aria-hidden="true">
             </div>
 
-            <section class="pages">
-                <div class="wrapper">
+            <section class="row">
+                <div class="wrapper small">
                     <h1>Success Stories</h1>
-                    <p>
+                    <p class="gray">
                         eLando is a professional services company and we have provided technology expertise and
                         software solutions for years. Our services range from complete design and development of
                         custom software applications to maintenance of existing applications.
@@ -30,7 +30,7 @@ defineProps({ user: Object });
                 </div>
             </section>
 
-            <section class="pages big">
+            <section class="row">
                 <section class="case-studies">
                     <h2>Case Studies</h2>
                     <div class="items">
