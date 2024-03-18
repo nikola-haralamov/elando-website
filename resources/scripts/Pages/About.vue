@@ -28,14 +28,14 @@ defineProps({ user: Object })
                         custom software applications to maintenance of existing applications.
                     </p>
                 </div>
-                <img src="static/shapes/shape-3.svg" alt="" />
+                <img src="/static/shapes/shape-3.svg" alt="" />
             </section>
 
             <section class="team">
                     <h2>Our team</h2>
                 <div class="members">
                     <div class="member border-top-cyan">
-                        <img src="static/about/avatar-1.png" alt="" />
+                        <img src="/static/about/avatar-1.png" alt="" />
                         <div class="info">
                             <p class="name">Stanimir boychev</p>
                             <p class="position">CEO, Founder</p>
@@ -46,7 +46,7 @@ defineProps({ user: Object })
                         </div>
                     </div>
                     <div class="member border-top-pink">
-                        <img src="static/about/avatar-2.png" alt="" />
+                        <img src="/static/about/avatar-2.png" alt="" />
                         <div class="info">
                             <p class="name">Georgi Tonchev</p>
                             <p class="position">Chief business development officer</p>
@@ -58,7 +58,7 @@ defineProps({ user: Object })
                         </div>
                     </div>
                     <div class="member border-top-cyan">
-                        <img src="static/about/avatar-3.png" alt="" />
+                        <img src="/static/about/avatar-3.png" alt="" />
                         <div class="info">
                             <p class="name">Rali Ralev</p>
                             <p class="position">Chief technology officer</p>
@@ -77,7 +77,7 @@ defineProps({ user: Object })
                     <p>Learn what makes us to drive this business and achieve every client need</p>
                     <div class="items">
                         <div class="item">
-                            <img src="static/icons/innovation.svg" alt="Innovation" />
+                            <img src="/static/icons/innovation.svg" alt="Innovation" />
                             <h3>Innovation</h3>
                             <p>
                                 We embrace creativity and fresh thinking, and are always looking
@@ -85,7 +85,7 @@ defineProps({ user: Object })
                             </p>
                         </div>
                         <div class="item">
-                            <img src="static/icons/excellence.svg" alt="Excellence" />
+                            <img src="/static/icons/excellence.svg" alt="Excellence" />
                             <h3>Excellence</h3>
                             <p>
                                 We hold ourselves to the highest standards of performance
@@ -93,7 +93,7 @@ defineProps({ user: Object })
                             </p>
                         </div>
                         <div class="item">
-                            <img src="static/icons/customer-focus.svg" alt="Customer focus" />
+                            <img src="/static/icons/customer-focus.svg" alt="Customer focus" />
                             <h3>Customer focus</h3>
                             <p>
                                 We prioritize the needs and goals of our customers above all else,
@@ -101,7 +101,7 @@ defineProps({ user: Object })
                             </p>
                         </div>
                         <div class="item">
-                            <img src="static/icons/mind.svg" alt="Growth mindset" />
+                            <img src="/static/icons/mind.svg" alt="Growth mindset" />
                             <h3>Growth mindset</h3>
                             <p>
                                 We embrace challenges and see them as opportunities to learn and improve,
@@ -109,7 +109,7 @@ defineProps({ user: Object })
                             </p>
                         </div>
                         <div class="item">
-                            <img src="static/icons/user-centered.svg" alt="User-centricity" />
+                            <img src="/static/icons/user-centered.svg" alt="User-centricity" />
                             <h3>User-centricity</h3>
                             <p>
                                 We place our users at the center of everything we do, and are dedicated
@@ -128,7 +128,7 @@ defineProps({ user: Object })
                         <div class="item border-top-cyan">
                             <h3>Java software engineer</h3>
                             <span class="location">
-                                <img src="static/icons/location.svg" alt="London, England" />
+                                <img src="/static/icons/location.svg" alt="London, England" />
                                 London, England
                             </span>
                             <p>
@@ -142,7 +142,7 @@ defineProps({ user: Object })
                         <div class="item border-top-pink">
                             <h3>Java software engineer</h3>
                             <span class="location">
-                                <img src="static/icons/location.svg" alt="London, England" />
+                                <img src="/static/icons/location.svg" alt="London, England" />
                                 London, England
                             </span>
                             <p>

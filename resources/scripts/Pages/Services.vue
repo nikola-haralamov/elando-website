@@ -33,7 +33,7 @@ defineProps({ user: Object })
             <section class="row">
                 <div class="services">
                     <div class="service border-top-cyan">
-                        <img src="static/icons/it-consulting-services.svg" alt="Tech consulting services" />
+                        <img src="/static/icons/it-consulting-services.svg" alt="Tech consulting services" />
                         <h3>Tech consulting services</h3>
                         <p>
                             Advising organizations on how best to use information technology
@@ -41,7 +41,7 @@ defineProps({ user: Object })
                         </p>
                     </div>
                     <div class="service border-top-pink">
-                        <img src="static/icons/software-engineering-services.svg" alt="Software engineering services" />
+                        <img src="/static/icons/software-engineering-services.svg" alt="Software engineering services" />
                         <h3>Software engineering services</h3>
                         <p>
                             We encompass the entire software project lifecycle, from initial requirement gathering
@@ -49,7 +49,7 @@ defineProps({ user: Object })
                         </p>
                     </div>
                     <div class="service border-top-purple">
-                        <img src="static/icons/mobile-solutions.svg" alt="Mobile solutions" />
+                        <img src="/static/icons/mobile-solutions.svg" alt="Mobile solutions" />
                         <h3>Mobile solutions</h3>
                         <p>
                             Advising organizations on how best to use mobile technology in achieving
@@ -57,7 +57,7 @@ defineProps({ user: Object })
                         </p>
                     </div>
                     <div class="service border-top-yellow">
-                        <img src="static/icons/blockchain.svg" alt="Blockchain" />
+                        <img src="/static/icons/blockchain.svg" alt="Blockchain" />
                         <h3>Blockchain</h3>
                         <p>
                             Our specialists are able to advise you and apply the best
@@ -65,7 +65,7 @@ defineProps({ user: Object })
                         </p>
                     </div>
                     <div class="service border-top-red">
-                        <img src="static/icons/cyber-security.svg" alt="Cyber Security" />
+                        <img src="/static/icons/cyber-security.svg" alt="Cyber Security" />
                         <h3>Cyber Security</h3>
                         <p>
                             The digital shift is presenting your company with
@@ -74,7 +74,7 @@ defineProps({ user: Object })
                         </p>
                     </div>
                     <div class="service border-top-blue">
-                        <img src="static/icons/reselling-software-licences.svg" alt="Reselling software licences" />
+                        <img src="/static/icons/reselling-software-licences.svg" alt="Reselling software licences" />
                         <h3>Reselling software licences</h3>
                         <p>
                             We are happy to be able to provide you with complete solution offering for

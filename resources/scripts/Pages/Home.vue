@@ -41,7 +41,7 @@ defineProps({ user: Object })
                                 md:px-12 px-8 py-12 rounded-full text-center text-white
                                 transition-colors w-full xl:w-1/3"
                     >
-                        <img src="static/icons/mind.svg" alt="" />
+                        <img src="/static/icons/mind.svg" alt="" />
                         <h3 class="title mb-4 md:text-3xl lg:text-2xl">
                             We solve bussiness problems
                         </h3>
@@ -54,7 +54,7 @@ defineProps({ user: Object })
                                 md:px-12 px-8 py-12 rounded-full text-center text-white
                                 transition-colors w-full xl:w-1/3"
                     >
-                        <img src="static/icons/share.svg" alt="" />
+                        <img src="/static/icons/share.svg" alt="" />
                         <h3 class="title mb-4 md:text-3xl lg:text-2xl">
                             We are highly experienced
                         </h3>
@@ -67,7 +67,7 @@ defineProps({ user: Object })
                                 md:px-12 px-8 py-12 rounded-full text-center text-white
                                 transition-colors w-full xl:w-1/3"
                     >
-                        <img src="static/icons/technology.svg" alt="" />
+                        <img src="/static/icons/technology.svg" alt="" />
                         <h3 class="title mb-4 md:text-3xl lg:text-2xl">
                             We are unique blend of expertise & stamina
                         </h3>
@@ -107,37 +107,37 @@ defineProps({ user: Object })
                 <div class="right">
                     <div class="two-columns-grid">
                         <div class="item border-top-cyan">
-                            <img src="static/icons/it-consulting-services.svg" alt="" />
+                            <img src="/static/icons/it-consulting-services.svg" alt="" />
                             <p>
                                 IT Consulting Services
                             </p>
                         </div>
                         <div class="item border-top-pink">
-                            <img src="static/icons/software-engineering-services.svg" alt="" />
+                            <img src="/static/icons/software-engineering-services.svg" alt="" />
                             <p>
                                 Software Engineering services
                             </p>
                         </div>
                         <div class="item border-top-pink">
-                            <img src="static/icons/blockchain.svg" alt="" />
+                            <img src="/static/icons/blockchain.svg" alt="" />
                             <p>
                                 Blockchain solutions
                             </p>
                         </div>
                         <div class="item border-top-cyan">
-                            <img src="static/icons/cloud.svg" alt="" />
+                            <img src="/static/icons/cloud.svg" alt="" />
                             <p>
                                 Cloud solutions
                             </p>
                         </div>
                         <div class="item border-top-cyan">
-                            <img src="static/icons/mobile-solutions.svg" alt="" />
+                            <img src="/static/icons/mobile-solutions.svg" alt="" />
                             <p>
                                 Mobile solutions
                             </p>
                         </div>
                         <div class="item border-top-pink">
-                            <img src="static/icons/cyber-security.svg" alt="" />
+                            <img src="/static/icons/cyber-security.svg" alt="" />
                             <p>
                                 Cyber security solutions
                             </p>
@@ -161,13 +161,13 @@ defineProps({ user: Object })
             </div>
             <div class="clients">
                 <div>
-                    <img src="static/home/client-1.svg" alt="" />
+                    <img src="/static/home/client-1.svg" alt="" />
                 </div>
                 <div>
-                    <img src="static/home/client-2.svg" alt="" />
+                    <img src="/static/home/client-2.svg" alt="" />
                 </div>
                 <div>
-                    <img src="static/home/client-3.svg" alt="" />
+                    <img src="/static/home/client-3.svg" alt="" />
                 </div>
             </div>
         </section>
@@ -187,7 +187,7 @@ defineProps({ user: Object })
             </section>
             <div class="bkg-2-wrap">
                 <div class="img-wrap">
-                    <img src="static/home/partnerships.png" alt="" />
+                    <img src="/static/home/partnerships.png" alt="" />
                 </div>
                 <div class="bkg-2 -z-10">
                 </div>

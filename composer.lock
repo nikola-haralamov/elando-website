@@ -7187,7 +7187,7 @@
                 "phpDocumentor",
                 "phpdoc",
                 "reflection",
-                "static analysis"
+                "/static analysis"
             ],
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",

@@ -5,7 +5,7 @@ import { Link } from '@inertiajs/vue3';
 <template>
     <div class="footer-wrapper">
         <section class="footer-1">
-            <img src="static/footer-logo.svg" alt="fl" />
+            <img src="/static/footer-logo.svg" alt="fl" />
             <p>
                 eLando is a subsidiary of eLando AD - Joint Stock Company specialising in software
                 engineering services and creating innovative digital products.
@@ -43,7 +43,7 @@ import { Link } from '@inertiajs/vue3';
         </section>
         <section class="footer-3">
             <div>
-                <img src="static/linked-in.png" alt="linked in" />
+                <img src="/static/linked-in.png" alt="linked in" />
             </div>
         </section>
         <section class="footer-4">
