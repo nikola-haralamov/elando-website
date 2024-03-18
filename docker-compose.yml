@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+#  php:
+#    build:
+#      args:
+#        user: user
+#        uid: 1000
+#      context: .
+#      dockerfile: ./docker/Dockerfile
+#    container_name: php
+##    image: app-php
+#    restart: unless-stopped
+#    #tty: true
+#    ports:
+#      - "9000:9000"
+#    volumes:
+#      - ./:/var/www/
+#    working_dir: /var/www/
+#    networks:
+#      - app-network
+
+  postgres:
+    container_name: postgres
+    image: postgres:alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:latest
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+      PGADMIN_LISTEN_PORT: ${PGADMIN_PORT}
+    ports:
+      - "${PGADMIN_PORT}:${PGADMIN_PORT}"
+    volumes:
+      - ./docker/pgadmin/servers.json:/pgadmin4/servers.json
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+#  nginx:
+#    image: nginx:alpine
+#    container_name: nginx
+#    restart: unless-stopped
+#    #tty: true
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    volumes:
+#      - ./:/var/www/
+#      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+#    networks:
+#      - app-network
+
+networks:
+  app-network:
+    driver: bridge

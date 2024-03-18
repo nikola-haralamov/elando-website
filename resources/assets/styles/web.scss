@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+@import "./variables.scss";
+@import "./animations.css";
+@import "../fonts/Roboto/Roboto.css";
+//@import "../fonts/Poppins/Poppins.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: $font;
+    color: $color;
+}
+
+hr {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: $background;
+    width: 100%;
+}
+
+.wrppr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        max-width: 1050px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 62px;
+            line-height: 93px;
+        }
+
+        p {
+            font-family: $font-small;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        p.gray {
+            color: #A1A6B1;
+        }
+    }
+
+    .wrapper.big {
+        max-width: 1200px;
+    }
+    .wrapper.small {
+        max-width: 850px;
+    }
+
+    .wrapper.no-margin {
+        margin: 0!important;
+    }
+
+}
+
+.flex {
+    display: flex;
+    align-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start !important;
+    align-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end !important;
+    align-content: flex-end !important;
+    align-items: flex-end !important;
+}
+
+.border-top-cyan {
+    //border-top: 0.125rem solid #4BD2E4;
+    border-top: 0.100rem solid #00E5FF;
+}
+.border-top-pink {
+    border-top: 0.100rem solid #FF83B7;
+}
+.border-top-purple {
+    border-top: 0.100rem solid #B34BE4;
+}
+.border-top-yellow {
+    border-top: 0.100rem solid #E1E44B;
+}
+.border-top-red {
+    border-top: 0.100rem solid #E44B4B;
+}
+.border-top-blue {
+    border-top: 0.100rem solid #4B51E4;
+}
+
+.glow-brass {
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 53 59/var(--tw-bg-opacity))
+}
+
+.glow-red {
+    --tw-bg-opacity: 1;
+    background-color: rgb(64 21 44/var(--tw-bg-opacity))
+}
+
+.glow-blue {
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 42 47/var(--tw-bg-opacity))
+}
+
+.glow-ocean {
+    --tw-bg-opacity: 1;
+    background-color: rgb(113 151 157/var(--tw-bg-opacity))
+}
+
+.glow,.glow-blue,.glow-brass,.glow-ocean,.glow-red {
+    border-radius: 9999px;
+    position: absolute;
+    transform: translateZ(0)
+}
+
+.glow-blue.blur-small,.glow-brass.blur-small,.glow-ocean.blur-small,.glow-red.blur-small,.glow.blur-small {
+    --tw-blur: blur(40px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.glow-blue.blur-medium,.glow-brass.blur-medium,.glow-ocean.blur-medium,.glow-red.blur-medium,.glow.blur-medium {
+    --tw-blur: blur(80px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.glow-blue.blur-large,.glow-brass.blur-large,.glow-ocean.blur-large,.glow-red.blur-large,.glow.blur-large {
+    --tw-blur: blur(120px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
