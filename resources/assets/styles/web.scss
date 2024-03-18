@@ -94,23 +94,23 @@ body {
 
 .flex {
     display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    align-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .flex-start {
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-start !important;
+    align-content: flex-start !important;
+    align-items: flex-start !important;
 }
 
 .flex-end {
     display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-end !important;
+    align-content: flex-end !important;
+    align-items: flex-end !important;
 }
 
 .border-top-cyan {

@@ -33,84 +33,118 @@ defineProps({
             </section>
 
             <section class="row">
-                <section class="case-studies">
-                    <h2>Case Studies</h2>
-                    <div class="items">
-                        <div class="item border-top-yellow">
-                            <img src="/static/success-stories/case-study-1.png"
-                                 alt="Digital Transformation – Development of a Digital Insurance Platform" />
-                            <h3>Digital Transformation – Development of a Digital Insurance Platform</h3>
-                            <p>
-                                Euroins Insurance Group AD is one of the largest independent insurance groups
-                                operating in Central and Eastern Europe. The group is focused on delivering
-                                a full range of insurance products in the areas of general, health and life insurance.
-                            </p>
-                        </div>
-                        <div class="item border-top-yellow">
-                            <img src="/static/success-stories/case-study-2.png"
-                                 alt="Digital Transformation – Development of a Digital Insurance Platform" />
-                            <h3>Digital Transformation – Development of a Digital Insurance Platform</h3>
-                            <p>
-                                Euroins Insurance Group AD is one of the largest independent insurance groups
-                                operating in Central and Eastern Europe. The group is focused on delivering
-                                a full range of insurance products in the areas of general, health and life insurance.
-                            </p>
-                        </div>
-                        <div class="item border-top-yellow">
-                            <img src="/static/success-stories/case-study-3.png"
-                                 alt="Digital Transformation – Development of a Digital Insurance Platform" />
-                            <h3>Digital Transformation – Development of a Digital Insurance Platform</h3>
-                            <p>
-                                Euroins Insurance Group AD is one of the largest independent insurance groups
-                                operating in Central and Eastern Europe. The group is focused on delivering
-                                a full range of insurance products in the areas of general, health and life insurance.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-
-                <section class="our-partners">
-                    <h2>Our partners</h2>
-
-
-                    <div class="items">
-                        <div class="item">
-                            <img src="/static/success-stories/partners/bianor.svg" alt="Bianor" />
-                        </div>
-                        <div class="item">
-                            <img src="/static/success-stories/partners/at-t.svg" alt="AT & T" />
-                        </div>
-                        <div class="item">
-                            <img src="/static/success-stories/partners/amexis.svg" alt="amexis" />
-                        </div>
-                        <div class="item">
-                            <img src="/static/success-stories/partners/adastra.svg" alt="adastra" />
-                        </div>
-
-
-
-                        <div class="item">
-                            <img src="/static/success-stories/partners/alianz.svg" alt="Alianz" />
-                        </div>
-                        <div class="item">
-                            <img src="/static/success-stories/partners/harley.svg" alt="Harley" />
-                        </div>
-                        <div class="item">
-                            <img src="/static/success-stories/partners/scalefocus.svg" alt="Scalefocus" />
-                        </div>
-                        <div class="item">
-                            <img src="/static/success-stories/partners/volkswagen.svg" alt="Volkswagen" />
-                        </div>
-
-                    </div>
-
+                <section class="wrapper">
+                    <img src="/static/success-story-one/image.png" alt="" />
                 </section>
             </section>
 
-            <section class="footer">
-                <div>
-                </div>
+            <section class="row">
+                <section class="wrapper small flex-start">
+                    <h1>
+                        Digital Transformation – Development of a Digital Insurance Platform
+                    </h1>
+                    <p class="calendar">
+                        <img src="/static/icons/calendar.svg" width="24" height="24" alt="date" />
+                        8 weeks
+                    </p>
+                    <p>
+                        Euroins Insurance Group AD is one of the largest independent insurance groups
+                        operating in Central and Eastern Europe. The group is focused on delivering a
+                        full range of insurance products in the areas of general, health and life insurance.
+                    </p>
+
+
+
+
+                    <div class="content">
+                        <div>
+                            <h2>Client</h2>
+                            <p>
+                                Euroins Insurance Group AD is one of the largest independent insurance groups operating in
+                                Central and Eastern Europe. The group is focused on delivering a full range of insurance
+                                products in the areas of general, health and life insurance. With operations in 14 countries,
+                                more than 4 million customers and over 3,000 employees, its operational complexity is
+                                significant.
+                            </p>
+                        </div>
+
+                        <div>
+                            <img src="/static/success-story-one/image-2.png" alt="">
+                        </div>
+
+                        <div>
+                            <h2>Challange</h2>
+                            <p>
+                                When COVID-19 pandemic hit Euroins found it very difficult to keep utilising its working
+                                model mostly based on offline processes and interactions.
+                                The technology innovation in the insurance industry model have been growing rapidly in
+                                the recent years rapidly moving into a near full digitalisation of
+                                most customer facing operations.
+                                Their clients wanted and during the pandemic needed a digital access to
+                                their services, as well as being able to manage existing policies with
+                                Euroins with few clicks, without having to visit one of their offices.
+                                Moreover, the digitalisation was inevitable, since greater number of their
+                                customers wanted a more cost-efficient services, which is allowed by having
+                                online self-service options which optimised the operational expenditure.
+                                Having only in-office service was keeping Euroins behind from their competitors,
+                                who were already starting their digitalisation and that consequently led them
+                                to loosing loyal clients.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2>Provided solution</h2>
+                            <p>
+                                Euroins concluded that they must digitalise their processes in order to stay
+                                competitive on the market. In order to do so, they contracted eLando AD
+                                to provide them with a viable solution based on the excellent specialty
+                                and vast experience in the InsureTech, eLando possess.
+                            </p>
+                            <br />
+                            <p>
+                                Gaining eLando as a trusted Tech Partnerr, Euroins secured themselves with a
+                                team of 6+ technology experts including solution architect, software
+                                engineers, quality assurance
+                                specialist and a project manager, to tackle the lack of digital
+                                technology in their working model as well providing self-service
+                                options online to their clients. The team built a successful “Client
+                                portal” platform from scratch which allowed Euroins to provide
+                                eServices to their customers for 10 of their products – from home
+                                and car insurance to tourist insurance policies.
+                            </p>
+                            <br />
+                            <p>
+                                We have created and built the technology solution using a robust enterprise-grade
+                                technology stack consisting of .NET Core, React, Azure, PostgreSQL.
+                            </p>
+                            <br />
+                            <p>
+                                Furthermore, while creating the digital platform from scratch, our specialists
+                                used modern technology and software development practices available such as
+                                Microservices architecture and Agile methodology. Assuring resilience,
+                                scalability, security and future-proof relevance of the system.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2>Results</h2>
+                            <p>
+                                After eLando became the trusted Tech Partner, Euroins managed to enhance their
+                                processes digitally, which led to securing new international clients and put
+                                the company in leading positions in the regional market, all due to the help
+                                and technological skills of our specialists who developed a modern client portal system.
+                            </p>
+                            <p>
+                                Additionally, the system was designed to handle large volume of traffic into the client’s
+                                portal which increased the customer satisfaction rates. It also dramatically lowered
+                                the cost of issuing policies comparing to the offline, paper and office-based
+                                approach which was dominant for the client beforehand.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </section>
             </section>
         </section>
     </Layout>
@@ -119,191 +153,43 @@ defineProps({
 <style scoped lang="scss">
 @import "../../../assets/styles/variables.scss";
 
-nav.breadcrumbs {
-    display: flex;
-    ol {
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        li {
-            display: list-item;
-            text-align: -webkit-match-parent;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 24px;
 
-
-            a:focus {
-                outline: thin dotted;
-            }
-
-            a:link {
-                touch-action: manipulation;
-            }
-
-            a:active,
-            a:hover {
-                outline: 0;
-            }
-
-            a:visited:not([rel='external']) {
-                color: #007c89;
-            }
-
-        }
-    }
+.row .wrapper h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
 }
 
-
-
-.case-studies {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    h2 {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 50px;
-        line-height: 75px;
-    }
-
-    .items {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-bottom: 3rem;
-        .item {
-            max-width: 543px;
-            min-height: 350px;
-            background: rgba(21, 21, 29, 0.81);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-content: flex-start;
-            justify-content: flex-start;
-            h3 {
-                padding-left: 18px;
-                padding-right: 18px;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 150%;
-            }
-            p  {
-                padding-left: 18px;
-                padding-right: 18px;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 150%;
-            }
-        }
-    }
+.row .wrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: left;
 }
 
-.our-partners {
-    max-width: 1200px;
+.calendar {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: -20rem;
-    h2 {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 50px;
-        line-height: 75px;
-    }
-
-    .items {
-        background: linear-gradient(
-                95.48deg, rgba(79, 79, 79, 0.8) 6.15%,
-                rgba(56, 56, 63, 0.352) 49.51%,
-                rgba(56, 56, 63, 0) 93.23%,
-                rgba(56, 56, 63, 0) 93.23%
-        );
-        border: 1px solid rgba(59, 62, 62);
-        //border: 1px solid rgba(255, 255, 255, 0.23);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 4px;
-        max-width: 1200px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        gap: 6rem;
-        padding: 2rem 4rem;
-        .item {
-            max-width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-        }
-    }
 }
 
-
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+.content {
     div {
-        background-image: url("../../../../public/static/shapes/shape-9.svg");
-        background-repeat: no-repeat, no-repeat;
-        background-position: center, bottom;
-        width: 1172px;
-        height: 353px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        max-width: 1366px;
+        margin-top: 3rem;
         h2 {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 60px;
-            line-height: 90px;
+            font-style: normal !important;
+            font-weight: 700 !important;
+            font-size: 24px !important;
+            line-height: 36px !important;
         }
         p {
-            font-family: $font-small;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 150%;
-            text-align: center;
-            color: #A1A6B1;
+            font-style: normal !important;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+            line-height: 130% !important;
         }
     }
 }
