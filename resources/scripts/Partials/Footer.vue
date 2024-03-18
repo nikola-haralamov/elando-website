@@ -69,9 +69,9 @@ footer {
         padding: 3rem;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
         align-content: center;
         align-items: center;
         gap: 5rem;
@@ -164,5 +164,13 @@ footer {
 
     }
 
+}
+
+
+@media only screen and (max-width: 1200px) {
+    footer {
+        background-color: rgba(1, 2, 2, 1);
+        border-top: none;
+    }
 }
 </style>

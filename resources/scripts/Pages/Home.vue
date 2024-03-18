@@ -96,7 +96,7 @@ defineProps({ user: Object })
             </div>
             <div class="bkg-1">
                 <div class="left">
-                    <div style="max-width: 465px;">
+                    <div>
                         <h3>What we do?</h3>
                         <p>
                             Our leadership team has extensive experience in managing leading tech companies and
@@ -231,6 +231,9 @@ defineProps({ user: Object })
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        div {
+            max-width: 465px;
+        }
         h3 {
             font-family: $font;
             font-style: normal;
@@ -443,6 +446,18 @@ defineProps({ user: Object })
             line-height: 150%;
             text-align: center;
             color: #A1A6B1;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bkg-1 {
+        min-height: auto;
+        min-width: auto;
+        .left {
+            div {
+                max-width: 350px;
+            }
         }
     }
 }

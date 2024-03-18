@@ -36,7 +36,7 @@ import { Link } from '@inertiajs/vue3';
                 </li>
             </ul>
         </nav>
-        <div class="languages">
+        <div class="languages" v-if="false">
             <img src="/static/languages.png" alt="languages" />
         </div>
     </div>

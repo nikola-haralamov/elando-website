@@ -231,7 +231,8 @@ defineProps({ user: Object });
         align-content: center;
         flex-wrap: wrap;
         align-items: center;
-        max-width: 1366px;
+        //max-width: 1366px;
+        //min-height: 389px;
         h2 {
             font-style: normal;
             font-weight: 700;
@@ -255,6 +256,10 @@ defineProps({ user: Object });
         //width: 1100px;
         --columns-count: 4!important;
     }
+
+    footer {
+
+    }
 }
 @media only screen and (max-width: 992px) {
     .items {
@@ -268,4 +273,16 @@ defineProps({ user: Object });
         --columns-count: 2!important;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .items {
+        //width: 1100px;
+        --columns-count: 4!important;
+    }
+
+    footer {
+
+    }
+}
+
 </style>
