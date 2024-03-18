@@ -14,8 +14,8 @@ defineProps({
 <template>
     <Layout>
         <Head>
-            <title>New One</title>
-            <meta head-key="description" name="description" content="New One" />
+            <title>Blog One</title>
+            <meta head-key="description" name="description" content="Blog One" />
         </Head>
 
         <section class="list-grid section relative overflow-hidden">

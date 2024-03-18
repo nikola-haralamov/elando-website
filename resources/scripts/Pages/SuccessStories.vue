@@ -183,7 +183,7 @@ defineProps({ user: Object });
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-bottom: -20rem;
+    margin-bottom: -15rem;
     h2 {
         font-style: normal;
         font-weight: 300;

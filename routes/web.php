@@ -8,13 +8,12 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TechnologyController;
 use App\Http\Controllers\ContactsController;
-
 use App\Http\Controllers\SuccessStoriesController;
 use App\Http\Controllers\SuccessStoryOneController;
-
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\NewOneController;
 use App\Http\Controllers\BlogController;
-//use App\Http\Controllers\NewOneController;
+use App\Http\Controllers\BlogOneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,10 +38,10 @@ Route::get('/success-stories/success-story-one', [SuccessStoryOneController::cla
     ->name('success-story-one');
 
 Route::get('/news', [NewsController::class, 'index'])->name('news');
-Route::get('/news/new-one', [SuccessStoryOneController::class, 'index'])->name('new-one');
+Route::get('/news/new-one', [NewOneController::class, 'index'])->name('new-one');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog/blog-one', [SuccessStoryOneController::class, 'index'])->name('blog-one');
+Route::get('/blog/blog-one', [BlogOneController::class, 'index'])->name('blog-one');
 
 
 Route::match(['get', 'post'], 'language/{locale?}', function (string $locale = null) {

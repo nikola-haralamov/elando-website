@@ -1,6 +1,6 @@
 <script setup>
 import Layout from '../Layouts/Default';
-import { Head } from '@inertiajs/vue3';
+import {Head, Link} from '@inertiajs/vue3';
 
 defineProps({ user: Object });
 
@@ -52,7 +52,10 @@ defineProps({ user: Object });
                                 of custom software applications to maintenance of existing applications.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read more now</a>
+                                <Link
+                                    :href="route('new-one')">
+                                    Read more now
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -75,7 +78,10 @@ defineProps({ user: Object });
                                 of custom software applications to maintenance of existing applications.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read more now</a>
+                                <Link
+                                    :href="route('new-one')">
+                                    Read more now
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -98,7 +104,10 @@ defineProps({ user: Object });
                                 a full range of insurance products in the areas of general, health and life insurance.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read more now</a>
+                                <Link
+                                    :href="route('new-one')">
+                                    Read more now
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -122,7 +131,10 @@ defineProps({ user: Object });
                                 of custom software applications to maintenance of existing applications.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read more now</a>
+                                <Link
+                                    :href="route('new-one')">
+                                    Read more now
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -145,7 +157,10 @@ defineProps({ user: Object });
                                 a full range of insurance products in the areas of general, health and life insurance.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read more now</a>
+                                <Link
+                                    :href="route('new-one')">
+                                    Read more now
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -264,10 +279,6 @@ defineProps({ user: Object });
             }
         }
     }
-
-
-
-
 }
 
 .footer {

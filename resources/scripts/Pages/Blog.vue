@@ -1,6 +1,6 @@
 <script setup>
 import Layout from '../Layouts/Default';
-import { Head } from '@inertiajs/vue3';
+import {Head, Link} from '@inertiajs/vue3';
 
 defineProps({ user: Object });
 
@@ -47,7 +47,10 @@ defineProps({ user: Object });
                                 provided technology expertise and  software solutions for years.
                             </p>
                             <div class="learn-more">
-                                <a href="#">Learn more</a>
+                                <Link
+                                    :href="route('blog-one')">
+                                    Learn more
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -65,7 +68,10 @@ defineProps({ user: Object });
                                 provided technology expertise and  software solutions for years.
                             </p>
                             <div class="learn-more">
-                                <a href="#">Learn more</a>
+                                <Link
+                                    :href="route('blog-one')">
+                                    Learn more
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -83,7 +89,10 @@ defineProps({ user: Object });
                                 provided technology expertise and  software solutions for years.
                             </p>
                             <div class="learn-more">
-                                <a href="#">Learn more</a>
+                                <Link
+                                    :href="route('blog-one')">
+                                    Learn more
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
@@ -101,7 +110,10 @@ defineProps({ user: Object });
                                 provided technology expertise and  software solutions for years.
                             </p>
                             <div class="learn-more">
-                                <a href="#">Learn more</a>
+                                <Link
+                                    :href="route('blog-one')">
+                                    Learn more
+                                </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
                             </div>
                         </div>
