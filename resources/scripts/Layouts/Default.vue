@@ -8,7 +8,6 @@ import Footer from '../Partials/Footer';
     <Head>
         <title>My app</title>
         <meta head-key="description" name="description" content="This is the default description" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     </Head>
     <header>
         <Header />

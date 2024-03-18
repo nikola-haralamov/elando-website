@@ -80,7 +80,8 @@ header {
             }
             a.active {
                 font-weight: 700;
-                border-bottom: 0.125rem solid;
+                padding-bottom: 0.25rem;
+                border-bottom: 0.140rem solid rgba(255, 255, 255, 1);
             }
             margin-right: 1.25rem;
 
