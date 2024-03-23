@@ -1,9 +1,6 @@
 <script setup>
 import Layout from '../Layouts/Default'
 import { Head } from '@inertiajs/vue3'
-
-defineProps({ user: Object })
-
 </script>
 
 <template>
@@ -25,7 +22,7 @@ defineProps({ user: Object })
                 <div class="grid h-auto place-items-center animate__animated animate__fadeInUp" aria-hidden="true">
                     <div class="flex items-center lg:block lg:ml-60" style="max-width: 750px">
                         <h1 class="lg:text-8xl md:text-7xl font-extrabold">
-                            {{ __("The experts in the land of IT :name", {name: $page.props.user.name}) }}
+                            {{ __("The experts in the land of IT") }}
                         </h1>
                     </div>
                 </div>

@@ -2,8 +2,6 @@
 import Layout from '../Layouts/Default';
 import { Head } from '@inertiajs/vue3';
 
-defineProps({ user: Object })
-
 </script>
 
 <template>
