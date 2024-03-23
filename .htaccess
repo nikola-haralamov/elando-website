@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST}    ^elando\.com [OR]
+RewriteCond %{HTTP_HOST}    ^www\.elando\.com [OR]
+RewriteCond %{HTTP_HOST}    ^elando\.bg [OR]
+RewriteCond %{HTTP_HOST}    ^www\.elando\.bg [OR]
+RewriteCond %{HTTP_HOST}    ^elando\.eu [OR]
+RewriteCond %{HTTP_HOST}    ^www\.elando\.eu [OR]
+RewriteCond %{HTTP_HOST}    ^elando\.co\.uk [OR]
+RewriteCond %{HTTP_HOST}    ^www\.elando\.co\.uk
+RewriteCond %{REQUEST_URI} !/public
+RewriteRule ^(.*)$  /public/$1 [L]
