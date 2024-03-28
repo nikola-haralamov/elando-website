@@ -31,12 +31,12 @@ import {Head, Link} from '@inertiajs/vue3';
                 <section class="news">
                     <div class="items">
                         <div class="item border-top-cyan">
-                            <img src="/static/news/new-1.png" alt="Using ChatGPT for software development?" />
-                            <h3>Using ChatGPT for software development?</h3>
+                            <img src="/static/news/new-1.png" alt="NEW INVESTOR IN ELANDO AD" v-if="false" />
+                            <h3>NEW INVESTOR IN ELANDO AD</h3>
                             <div class="dates">
                                 <p class="date">
                                     <img src="/static/icons/calendar.svg" width="24" height="24" alt="date" />
-                                    18.03.2023
+                                    01.02.2024
                                 </p>
                                 <p class="time">
                                     <img src="/static/icons/clock.svg" width="24" height="24" alt="date" />
@@ -44,9 +44,10 @@ import {Head, Link} from '@inertiajs/vue3';
                                 </p>
                             </div>
                             <p>
-                                eLando is a professional services company and we have provided technology expertise and
-                                software solutions for years. Our services range from complete design and development
-                                of custom software applications to maintenance of existing applications.
+                                An investor in eLando AD is New Vision 3 Fund, which is co-financed by the
+                                European Structural and Investment Funds under the Operational Programme
+                                for Innovation and Competitiveness 2014-2020 managed by the Fund of
+                                Funds in Bulgaria
                             </p>
                             <div class="read-more">
                                 <Link
@@ -57,7 +58,7 @@ import {Head, Link} from '@inertiajs/vue3';
                             </div>
                         </div>
                         <div class="item border-top-pink">
-                            <img src="/static/news/new-1.png" alt="Using ChatGPT for software development?" />
+                            <img src="/static/news/new-1.png" alt="Using ChatGPT for software development?" v-if="false" />
                             <h3>Using ChatGPT for software development?</h3>
                             <div class="dates">
                                 <p class="date">
@@ -76,7 +77,7 @@ import {Head, Link} from '@inertiajs/vue3';
                             </p>
                             <div class="read-more">
                                 <Link
-                                    :href="route('new-one')">
+                                    :href="route('new-two')">
                                     Read more now
                                 </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
@@ -102,7 +103,7 @@ import {Head, Link} from '@inertiajs/vue3';
                             </p>
                             <div class="read-more">
                                 <Link
-                                    :href="route('new-one')">
+                                    :href="route('new-two')">
                                     Read more now
                                 </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
@@ -129,7 +130,7 @@ import {Head, Link} from '@inertiajs/vue3';
                             </p>
                             <div class="read-more">
                                 <Link
-                                    :href="route('new-one')">
+                                    :href="route('new-two')">
                                     Read more now
                                 </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
@@ -155,7 +156,7 @@ import {Head, Link} from '@inertiajs/vue3';
                             </p>
                             <div class="read-more">
                                 <Link
-                                    :href="route('new-one')">
+                                    :href="route('new-two')">
                                     Read more now
                                 </Link>
                                 <img src="/static/icons/arrow-left.svg" alt="" />
@@ -206,7 +207,9 @@ import {Head, Link} from '@inertiajs/vue3';
 
         .item:first-child {
             max-width: 1106px;
-            min-height: 511px;
+            min-height: 100%;
+            height: auto;
+
         }
 
         .item {
@@ -261,6 +264,7 @@ import {Head, Link} from '@inertiajs/vue3';
             h3 {
                 padding-left: 18px;
                 padding-right: 18px;
+                padding-top: 8px;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 24px;

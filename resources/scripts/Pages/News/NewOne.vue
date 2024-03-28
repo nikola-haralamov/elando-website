@@ -14,8 +14,8 @@ defineProps({
 <template>
     <Layout>
         <Head>
-            <title>New One</title>
-            <meta head-key="description" name="description" content="New One" />
+            <title>NEW INVESTOR IN ELANDO AD</title>
+            <meta head-key="description" name="description" content="NEW INVESTOR IN ELANDO AD" />
         </Head>
 
         <section class="list-grid section relative overflow-hidden">
@@ -34,116 +34,34 @@ defineProps({
 
             <section class="row">
                 <section class="wrapper">
-                    <img src="/static/success-story-one/image.png" alt="" />
+                    <img src="/static/success-story-one/image.png" alt="" v-if="false" />
                 </section>
             </section>
 
             <section class="row">
                 <section class="wrapper small flex-start">
                     <h1>
-                        Digital Transformation – Development of a Digital Insurance Platform
+                        NEW INVESTOR IN ELANDO AD
                     </h1>
                     <p class="calendar">
                         <img src="/static/icons/calendar.svg" width="24" height="24" alt="date" />
-                        8 weeks
+                        1 week
                     </p>
-                    <p>
-                        Euroins Insurance Group AD is one of the largest independent insurance groups
-                        operating in Central and Eastern Europe. The group is focused on delivering a
-                        full range of insurance products in the areas of general, health and life insurance.
-                    </p>
-
-
-
-
                     <div class="content">
                         <div>
-                            <h2>Client</h2>
                             <p>
-                                Euroins Insurance Group AD is one of the largest independent insurance groups operating in
-                                Central and Eastern Europe. The group is focused on delivering a full range of insurance
-                                products in the areas of general, health and life insurance. With operations in 14 countries,
-                                more than 4 million customers and over 3,000 employees, its operational complexity is
-                                significant.
-                            </p>
-                        </div>
-
-                        <div>
-                            <img src="/static/success-story-one/image-2.png" alt="">
-                        </div>
-
-                        <div>
-                            <h2>Challange</h2>
-                            <p>
-                                When COVID-19 pandemic hit Euroins found it very difficult to keep utilising its working
-                                model mostly based on offline processes and interactions.
-                                The technology innovation in the insurance industry model have been growing rapidly in
-                                the recent years rapidly moving into a near full digitalisation of
-                                most customer facing operations.
-                                Their clients wanted and during the pandemic needed a digital access to
-                                their services, as well as being able to manage existing policies with
-                                Euroins with few clicks, without having to visit one of their offices.
-                                Moreover, the digitalisation was inevitable, since greater number of their
-                                customers wanted a more cost-efficient services, which is allowed by having
-                                online self-service options which optimised the operational expenditure.
-                                Having only in-office service was keeping Euroins behind from their competitors,
-                                who were already starting their digitalisation and that consequently led them
-                                to loosing loyal clients.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h2>Provided solution</h2>
-                            <p>
-                                Euroins concluded that they must digitalise their processes in order to stay
-                                competitive on the market. In order to do so, they contracted eLando AD
-                                to provide them with a viable solution based on the excellent specialty
-                                and vast experience in the InsureTech, eLando possess.
-                            </p>
-                            <br />
-                            <p>
-                                Gaining eLando as a trusted Tech Partnerr, Euroins secured themselves with a
-                                team of 6+ technology experts including solution architect, software
-                                engineers, quality assurance
-                                specialist and a project manager, to tackle the lack of digital
-                                technology in their working model as well providing self-service
-                                options online to their clients. The team built a successful “Client
-                                portal” platform from scratch which allowed Euroins to provide
-                                eServices to their customers for 10 of their products – from home
-                                and car insurance to tourist insurance policies.
-                            </p>
-                            <br />
-                            <p>
-                                We have created and built the technology solution using a robust enterprise-grade
-                                technology stack consisting of .NET Core, React, Azure, PostgreSQL.
-                            </p>
-                            <br />
-                            <p>
-                                Furthermore, while creating the digital platform from scratch, our specialists
-                                used modern technology and software development practices available such as
-                                Microservices architecture and Agile methodology. Assuring resilience,
-                                scalability, security and future-proof relevance of the system.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h2>Results</h2>
-                            <p>
-                                After eLando became the trusted Tech Partner, Euroins managed to enhance their
-                                processes digitally, which led to securing new international clients and put
-                                the company in leading positions in the regional market, all due to the help
-                                and technological skills of our specialists who developed a modern client portal system.
-                            </p>
-                            <p>
-                                Additionally, the system was designed to handle large volume of traffic into the client’s
-                                portal which increased the customer satisfaction rates. It also dramatically lowered
-                                the cost of issuing policies comparing to the offline, paper and office-based
-                                approach which was dominant for the client beforehand.
+                                An investor in eLando AD is New Vision 3 Fund, which is co-financed by the
+                                European Structural and Investment Funds under the Operational Programme
+                                for Innovation and Competitiveness 2014-2020 managed by the Fund of
+                                Funds in Bulgaria
                             </p>
                         </div>
                     </div>
-
-
+                    <div class="images">
+                        <img src="/static/new-one/ERDF-Logo1-2-768x431.png" alt="ERDF" style="max-width: 32%" />
+                        <img src="/static/new-one/logo_news_en-1.jpg" alt="funds" style="max-width: 32%" />
+                        <img src="/static/new-one/logo_op_brand_en-1-768x236.png" alt="logo_op_brand_en" style="max-width: 32%" />
+                    </div>
                 </section>
             </section>
         </section>
@@ -194,4 +112,13 @@ defineProps({
     }
 }
 
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
 </style>

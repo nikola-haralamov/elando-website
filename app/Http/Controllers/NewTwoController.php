@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Response;
 use Inertia\Inertia;
 
-class NewOneController extends Controller
+class NewTwoController extends Controller
 {
     public function index(): Response
     {
@@ -17,13 +17,13 @@ class NewOneController extends Controller
                 'exist' => Route::has('news'),
             ],
             [
-                'label' => 'NEW INVESTOR IN ELANDO AD',
-                'route' => 'new-one',
-                'exist' => Route::has('new-one'),
+                'label' => 'New two',
+                'route' => 'new-two',
+                'exist' => Route::has('new-two'),
             ],
         ];
 
-        return Inertia::render('News/NewOne',  [
+        return Inertia::render('News/NewTwo',  [
             'breadcrumbs' => $breadcrumbs,
         ]);
     }

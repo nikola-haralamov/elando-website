@@ -12,6 +12,7 @@ use App\Http\Controllers\SuccessStoriesController;
 use App\Http\Controllers\SuccessStoryOneController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\NewOneController;
+use App\Http\Controllers\NewTwoController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogOneController;
 
@@ -39,6 +40,7 @@ Route::get('/success-stories/success-story-one', [SuccessStoryOneController::cla
 
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/news/new-one', [NewOneController::class, 'index'])->name('new-one');
+Route::get('/news/new-two', [NewTwoController::class, 'index'])->name('new-two');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog/blog-one', [BlogOneController::class, 'index'])->name('blog-one');
