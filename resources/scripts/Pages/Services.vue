@@ -20,9 +20,17 @@ import { Head } from '@inertiajs/vue3'
                 <div class="wrapper small">
                     <h1>Services</h1>
                     <p>
-                        eLando is a professional services company and we have provided technology expertise and
-                        software solutions for years. Our services range from complete design and development of
+                        eLando is a professional services company and we have provided
+                        technology expertise and software solutions for years.
+                        Our services range from complete design and development of
                         custom software applications to maintenance of existing applications.
+                    </p>
+                    <p>
+                    /eLando, a distinguished professional services provider,
+                        offers years of expertise in technology and
+                        bespoke software solutions. Our services encompass
+                        everything from the creation and development of
+                        custom software applications to the expert upkeep of existing ones/
                     </p>
                 </div>
             </section>
@@ -36,21 +44,62 @@ import { Head } from '@inertiajs/vue3'
                             Advising organizations on how best to use information technology
                             in achieving their business objectives.
                         </p>
+                        <p>
+                            <s>
+                                /Expertly guiding organizations in optimizing their
+                                use of information technology to achieve business goals./
+                            </s>
+                        </p>
+                        <p>
+                            /We assist enterprises in formulating and implementing advanced IT
+                            strategies to align with their business objectives. Our focus includes
+                            optimizing technology infrastructure, enhancing digital workflows,
+                            and facilitating tech-driven business transformation./
+                        </p>
                     </div>
                     <div class="service border-top-pink">
                         <img src="/static/icons/software-engineering-services.svg" alt="Software engineering services" />
                         <h3>Software engineering services</h3>
                         <p>
-                            We encompass the entire software project lifecycle, from initial requirement gathering
-                            to comprehensive development, followed by continuous maintenance and support.
+                            We encompass the entire software project lifecycle,
+                            from initial requirement gathering to comprehensive development,
+                            followed by continuous maintenance and support.
+                        </p>
+                        <p>
+                            <s>
+                                /Covering the full spectrum of the software project lifecycle,
+                                we engage from initial requirement analysis to complete development,
+                                and provide ongoing maintenance and support./
+                            </s>
+                        </p>
+                        <p>
+                            /Our services encompass the full spectrum of the software project lifecycle,
+                            starting from detailed requirements analysis to robust software development,
+                            and extending to ongoing maintenance and support.
+                            This includes employing cutting-edge methodologies and technologies
+                            for software architecture, iterative development, quality assurance,
+                            and deployment, ensuring high-quality
+                            deliverables and long-term reliability./
                         </p>
                     </div>
                     <div class="service border-top-purple">
                         <img src="/static/icons/mobile-solutions.svg" alt="Mobile solutions" />
                         <h3>Mobile solutions</h3>
                         <p>
-                            Advising organizations on how best to use mobile technology in achieving
-                            their business objectives. Estimate, manage, implement, deploy.
+                            Advising organizations on how best to use mobile technology
+                            in achieving their business objectives. Estimate, manage, implement, deploy.
+                        </p>
+                        <p>
+                            <s>
+                                /Specializing in guiding organizations to effectively utilize mobile
+                                technology for their business goals. Our expertise covers estimation,
+                                management, implementation, and deployment./
+                            </s>
+                        </p>
+                        <p>
+                            /We provide expert guidance to organizations on leveraging mobile
+                            technology for business objectives, encompassing estimation,
+                            management, implementation, and deployment of mobile solutions./
                         </p>
                     </div>
                     <div class="service border-top-yellow">
@@ -60,22 +109,61 @@ import { Head } from '@inertiajs/vue3'
                             Our specialists are able to advise you and apply the best
                             practices in modern software integration like SOA, BPM, EAI
                         </p>
+                        <p>
+                            <s>
+                                /Our experts provide consultation and implement
+                                cutting-edge practices in modern software integration,
+                                including SOA, BPM, and EAI, ensuring optimal blockchain solutions./
+                            </s>
+                        </p>
+                        <p>
+                            /Our team of blockchain specialists advises on best practices in modern
+                            software integration, including SOA, BPM, and EAI,
+                            ensuring efficient and secure blockchain solutions./
+                        </p>
                     </div>
                     <div class="service border-top-red">
                         <img src="/static/icons/cyber-security.svg" alt="Cyber Security" />
                         <h3>Cyber Security</h3>
                         <p>
-                            The digital shift is presenting your company with
-                            fresh opportunities, yet it also unveils new security threats.
-                            We stand ready to fortify your defenses against them.
+                            The digital shift is presenting your company with fresh opportunities,
+                            yet it also unveils new security threats.
+                            We stand ready to fortify your defences against them.
+                        </p>
+                        <p>
+                            <s>
+                                /As the digital landscape evolves with new opportunities,
+                                it also brings novel security challenges.
+                                Our team is dedicated to strengthening your
+                                company's defenses against these emerging threats./
+                            </s>
+                        </p>
+                        <p>
+                            /As digital transformation opens new opportunities for your business,
+                            it also exposes new cyber threats.
+                            Our Cyber Security team is equipped
+                            to strengthen your defenses against these evolving digital risks_._/
                         </p>
                     </div>
                     <div class="service border-top-blue">
                         <img src="/static/icons/reselling-software-licences.svg" alt="Reselling software licences" />
                         <h3>Reselling software licences</h3>
                         <p>
-                            We are happy to be able to provide you with complete solution offering for
-                            your needs including the needed hardware and software licenses.
+                            We are happy to be able to provide you with complete
+                            solution offering for your needs including
+                            the needed hardware and software licenses.
+                        </p>
+                        <p>
+                            <s>
+                                /We take pride in offering comprehensive solutions
+                                tailored to your needs, including essential
+                                hardware and software licenses./
+                            </s>
+                        </p>
+                        <p>
+                            /We offer comprehensive solutions tailored to your requirements,
+                            encompassing both essential hardware and software
+                            licensing services to meet your complete technological needs./
                         </p>
                     </div>
                 </div>
@@ -145,7 +233,7 @@ import { Head } from '@inertiajs/vue3'
     margin-bottom: 3rem;
     .service {
         max-width: 400px;
-        height: 250px;
+        height: 100%;
         background-image: url("../../../public/static/shapes/shape-5.svg");
         background-repeat: no-repeat, no-repeat;
         background-position: -1rem 0rem;
@@ -172,7 +260,7 @@ import { Head } from '@inertiajs/vue3'
             line-height: 32px;
             text-align: center;
         }
-        p  {
+        p, p > s  {
             font-family: $font-small;
             font-style: normal;
             font-weight: 700;

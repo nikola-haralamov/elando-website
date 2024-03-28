@@ -20,11 +20,15 @@ import { Head } from '@inertiajs/vue3';
                 <div class="wrapper m-8">
                     <h1>Technology</h1>
                     <p>
-                        eLando provides a complete range of software development and IT consulting services,
-                        leveraging over a decade of experience and extensive knowledge of the latest technologies.
-                        Our team of expert IT professionals from diverse fields collaborates to offer advanced and fully
-                        integrated solutions that enable companies to capitalize on fresh
-                        possibilities and gain a competitive edge.
+                        eLando offers a full spectrum of software development and
+                        technology consulting services, drawing on more than ten
+                        years of experience and a deep understanding of cutting-edge technologies.
+                    </p>
+                    <p>
+                        Our team, comprising skilled tech experts from various sectors,
+                        delivers sophisticated, integrated solutions,
+                        empowering businesses to seize new opportunities
+                        and achieve a competitive advantage.
                     </p>
                 </div>
             </section>
@@ -35,11 +39,12 @@ import { Head } from '@inertiajs/vue3';
                         <hr class="border-top-cyan" />
                         <h2>Front-end</h2>
                         <p>
-                            Front-end development involves creating and implementing the user interface
-                            of a website or application, focusing on the visual and interactive elements
-                            that users directly interact with. It requires a combination of coding skills,
-                            design principles, and usability considerations to deliver an
-                            engaging and intuitive user experience.
+                            Front-end development centres on designing and building the
+                            user interface of websites and applications, emphasizing
+                            the visual and interactive aspects that users engage
+                            with directly. This process blends coding expertise,
+                            design acumen, and user-centric principles to craft an
+                            immersive and user-friendly experience.
                         </p>
                         <div class="items" data-columns="5">
                             <div class="item border-top-pink">react</div>
@@ -54,10 +59,12 @@ import { Head } from '@inertiajs/vue3';
                         <hr class="border-top-cyan" />
                         <h2>Back-end</h2>
                         <p>
-                            Backend refers to the underlying components and functionality that power a software
-                            application or website, often unseen by users. It includes server-side operations,
-                            databases, and the logic that handles data processing,
-                            user authentication, and the communication between the server and the client.
+                            Backend development pertains to the essential, unseen elements
+                            that drive a software application or website.
+                            This includes server-side tasks, database management,
+                            and the critical logic for data processing, user authentication,
+                            and facilitating communication between the server and
+                            the client interface.
                         </p>
                         <div class="items" data-columns="3">
                             <div class="item border-top-pink">java</div>
@@ -73,21 +80,25 @@ import { Head } from '@inertiajs/vue3';
                         <hr class="border-top-cyan" />
                         <h2>Mobile</h2>
                         <p>
-                            Mobile app development involves utilizing various technologies to create applications
-                            for mobile devices such as smartphones and tablets. These technologies include
-                            programming languages like Swift (for iOS) and Java or Kotlin (for Android),
-                            frameworks such as React Native and Flutter for cross-platform development,
-                            and tools like Xcode and Android Studio for building, testing, and deploying mobile apps.
+                            Mobile application development encompasses the use of diverse
+                            technologies to craft applications for mobile devices,
+                            including smartphones and tablets. This field utilizes specific
+                            programming languages, such as Swift for iOS and
+                            Java or Kotlin for Android, along with frameworks
+                            like React Native and Flutter for cross-platform
+                            app creation. Essential tools like Xcode and Android Studio
+                            are integral for the development, testing, and
+                            deployment of these mobile applications.
                         </p>
                         <div class="items" data-columns="4">
                             <div class="item border-top-pink">ios</div>
                             <div class="item border-top-pink">android</div>
+                            <div class="item border-top-pink">kotlin</div>
+                            <div class="item border-top-pink">swift</div>
                             <div class="item border-top-pink">flutter</div>
                             <div class="item border-top-pink">react native</div>
                             <div class="item border-top-pink">xamarin</div>
                             <div class="item border-top-pink">.net maui</div>
-                            <div class="item border-top-pink">switft</div>
-                            <div class="item border-top-pink">kotlin</div>
                         </div>
                     </section>
 
@@ -95,20 +106,24 @@ import { Head } from '@inertiajs/vue3';
                         <hr class="border-top-cyan" />
                         <h2>Platforms</h2>
                         <p>
-                            In the current dynamic and fast pacing world each organization is bound to
-                            provide options for its customers and employees to use and access software
-                            systems on the road through a mobile device. We are here to help you with the
-                            development of iOS, Android, Windows Phone, and other devices on the market.
-                            eLando is focusing on enterprise grade mobile solutions that allow seamless
-                            user experience and integration with backend systems.
+                            In today's fast-paced and dynamic environment, it's essential
+                            for organisations to provide mobile access to their software
+                            systems for customers and employees alike. eLando is here
+                            to assist in developing mobile solutions for iOS, Android,
+                            Windows Phone, and other mobile devices, focusing on
+                            enterprise-grade applications that ensure a seamless
+                            user experience and integrate effortlessly with
+                            backend systems.
                         </p>
                         <p>
-                            We can offer native development skills for each mobile device platform,
-                            as well as application of the multi-platform development frameworks that
-                            allow faster time to market, addressing more than one device types with one shot,
-                            while still preserving the quality of the solution and the user experience.
-                            Our QA engineers are specialized in testing on mobile platforms,
-                            equipped with many different devices, emulators, and tools.
+                            We offer specialised native development for each mobile platform,
+                            as well as expertise in multi-platform development frameworks
+                            that enhance time-to-market efficiency. This approach addresses
+                            multiple device types simultaneously without compromising
+                            solution quality or user experience. Additionally, our QA
+                            engineers are experts in mobile platform testing, equipped
+                            with a variety of devices, emulators, and tools to ensure the
+                            highest quality standards.
                         </p>
                         <div class="items" data-columns="5">
                             <div class="item border-top-pink">aws</div>

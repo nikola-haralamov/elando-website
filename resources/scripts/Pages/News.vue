@@ -31,7 +31,7 @@ import {Head, Link} from '@inertiajs/vue3';
                 <section class="news">
                     <div class="items">
                         <div class="item border-top-cyan">
-                            <img src="/static/news/new-1.png" alt="NEW INVESTOR IN ELANDO AD" v-if="false" />
+                            <img src="/static/news/new-one.jpg" alt="NEW INVESTOR IN ELANDO AD" v-if="true" />
                             <h3>NEW INVESTOR IN ELANDO AD</h3>
                             <div class="dates">
                                 <p class="date">

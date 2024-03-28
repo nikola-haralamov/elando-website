@@ -31,7 +31,7 @@ import { Head } from '@inertiajs/vue3'
                 </div>
             </div>
             <div class="max-w-full">
-                <h2 class="title mb-4 md:text-3xl lg:text-4xl mx-auto text-center"> What we are good at? </h2>
+                <h2 class="title mb-4 md:text-3xl lg:text-4xl mx-auto text-center">What we are good at? </h2>
                 <div class="flex items-center justify-center flex-wrap gap-2 rounded-[300px] sm:p-6 xl:rounded-full">
                     <div class="flex items-center justify-center aspect-square duration-300 ease
                                 flex-col group hover:bg-m-500/10 hover:text-white max-w-[400px]
@@ -40,10 +40,11 @@ import { Head } from '@inertiajs/vue3'
                     >
                         <img src="/static/icons/mind.svg" alt="" />
                         <h3 class="title mb-4 md:text-3xl lg:text-2xl">
-                            We solve bussiness problems
+                            We solve business problems
                         </h3>
                         <p class="transition-colors duration-300 ease group-hover:text-white leading-6 text-m-500 text-sm max-w-[190px]">
-                            Working across the domain with deep technology and business expertise.
+                            We address business challenges by leveraging our
+                            extensive technology and business expertise across various domains.
                         </p>
                     </div>
                     <div class="flex items-center justify-center aspect-square duration-300 ease
@@ -56,7 +57,8 @@ import { Head } from '@inertiajs/vue3'
                             We are highly experienced
                         </h3>
                         <p class="transition-colors duration-300 ease group-hover:text-white leading-6 text-m-500 text-sm max-w-[220px]">
-                            Experienced in crafting effective software solutions for different needs and budgets.
+                            We excel in creating tailored software solutions,
+                            adeptly meeting diverse needs and budgets with our rich experience.
                         </p>
                     </div>
                     <div class="flex items-center justify-center aspect-square duration-300 ease
@@ -69,7 +71,9 @@ import { Head } from '@inertiajs/vue3'
                             We are unique blend of expertise & stamina
                         </h3>
                         <p class="transition-colors duration-300 ease group-hover:text-white leading-6 text-m-500 text-sm max-w-[220px]">
-                            We do customer software development, technology and consulting.
+                            We offer a distinctive combination of expertise and resilience,
+                            specialising in custom software development,
+                            technology enablement, and consulting.
                         </p>
                     </div>
                 </div>
@@ -96,8 +100,8 @@ import { Head } from '@inertiajs/vue3'
                     <div>
                         <h3>What we do?</h3>
                         <p>
-                            Our leadership team has extensive experience in managing leading tech companies and
-                            proven track record of delivering successful projects for international clients
+                            Our leadership team brings a wealth of experience from leading technology companies,
+                            with a strong history of successfully project delivery for global clients.
                         </p>
                     </div>
                 </div>

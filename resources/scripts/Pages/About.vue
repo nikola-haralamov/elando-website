@@ -20,9 +20,21 @@ import { Head } from '@inertiajs/vue3';
                 <div class="wrapper small">
                     <h1>Aboout us</h1>
                     <p class="gray">
-                        eLando is a professional services company and we have provided technology expertise and
-                        software solutions for years. Our services range from complete design and development of
-                        custom software applications to maintenance of existing applications.
+                        eLando turns business visions into reality by integrating technical expertise,
+                        sector knowledge and domain expertise with individual client
+                        requirements – providing innovative technology solutions
+                        using top notch delivery methodologies.
+                    </p>
+                    <p class="gray">
+                        When technology can better support you and you need a world class
+                        expertise - we are your Technology Partner of choice and
+                        together we can unlock your ideal solution.
+                    </p>
+                    <p class="gray">
+                        eLando is a professional services company and we’ve provided
+                        innovative technology expertise and software solutions for years.
+                        Our services range from complete design and development of custom
+                        software applications to maintenance of existing applications.
                     </p>
                 </div>
                 <img src="/static/shapes/shape-3.svg" alt="" />
@@ -37,8 +49,9 @@ import { Head } from '@inertiajs/vue3';
                             <p class="name">Stanimir boychev</p>
                             <p class="position">CEO, Founder</p>
                             <p class="description">
-                                Mr. Boychev has managed and facilitated the communication between the senior management,
-                                business’ stakeholders, the technical architects, and developers.
+                                Stanimir excels in bridging communication gaps,
+                                seamlessly connecting senior management, business stakeholders,
+                                technical architects, and engineers for effective collaboration.
                             </p>
                         </div>
                     </div>
@@ -46,11 +59,12 @@ import { Head } from '@inertiajs/vue3';
                         <img src="/static/about/avatar-2.png" alt="" />
                         <div class="info">
                             <p class="name">Georgi Tonchev</p>
-                            <p class="position">Chief business development officer</p>
+                            <p class="position">CBDO, Partner</p>
                             <p class="description">
-                                Georgi is a highly experienced problem solver specialising in developing
-                                client-centric strategic solutions which help solve problems,
-                                achieve objectives and generate revenue.
+                                Georgi stands out as a seasoned problem-solver,
+                                specialising in crafting strategic,
+                                client-focused solutions that address challenges,
+                                meet objectives, and drive revenue growth.
                             </p>
                         </div>
                     </div>
@@ -58,10 +72,11 @@ import { Head } from '@inertiajs/vue3';
                         <img src="/static/about/avatar-3.png" alt="" />
                         <div class="info">
                             <p class="name">Rali Ralev</p>
-                            <p class="position">Chief technology officer</p>
+                            <p class="position">CTO, Partner</p>
                             <p class="description">
-                                Rali is focused on the technological and scientific issues within the organization.
-                                He is an experienced executive with a strong background in the FinTech sector.
+                                Rali concentrates on the technological and scientific aspects of the organisation,
+                                bringing a wealth of experience as an executive with
+                                a robust background in the FinTech sector.
                             </p>
                         </div>
                     </div>

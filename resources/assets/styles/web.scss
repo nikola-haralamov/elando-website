@@ -65,7 +65,8 @@ body {
             line-height: 93px;
         }
 
-        p {
+        p, s {
+            margin: 0.8rem 1.2rem;
             font-family: $font-small;
             font-style: normal;
             font-weight: 400;

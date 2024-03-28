@@ -43,7 +43,9 @@ import { Link } from '@inertiajs/vue3';
         </section>
         <section class="footer-3">
             <div>
-                <img src="/static/linked-in.png" alt="linked in" />
+                <a href="https://www.linkedin.com/company/elando" target="_blank">
+                    <img src="/static/linked-in.png" alt="LinkedIn" />
+                </a>
             </div>
         </section>
         <section class="footer-4">
